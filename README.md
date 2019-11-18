@@ -1,2 +1,2 @@
 # limeless-interface-design
-Our final project for our interface design class
+Final project for our interface design class
