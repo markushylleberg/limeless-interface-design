@@ -1,5 +1,9 @@
-# limeless-interface-design
+# Limeless-interface-design
 Final project for our interface design class
+
+# Techologies
+
+        html, php, css, javascript, jquery(ajax)
 
 ## Programming guidelines
 
