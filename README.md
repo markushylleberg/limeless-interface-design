@@ -11,7 +11,7 @@ Final project for our interface design class
 
         We will code this application in mobile first
 
-##2 Naming conventions
+<b>Naming conventions</b>
 
         (JS) Write the javascript in a OOP matter
 
@@ -28,6 +28,6 @@ Final project for our interface design class
         (CSS) We will try as much as we can to build our stylesheet based on our style guide
               and in that way build a framework to maintain consistancy on our site
     
-##3 XD & Style guide
+<b>XD & Style guide</b>
    
          Use our style guide and XD-prototype for styling
