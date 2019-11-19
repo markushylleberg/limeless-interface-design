@@ -4,7 +4,7 @@ Final project for our interface design class
 ## Programming guidelines
 
 ###1 Mobile first
-    We will code this application in mobile first
+        We will code this application in mobile first
 
 ###2 Naming conventions
 
@@ -19,4 +19,5 @@ Final project for our interface design class
               and in that way build a framework to maintain consistancy on our site
     
 ###3 XD & Style guide
-    Use our style guide and XD-prototype for styling
+   
+         Use our style guide and XD-prototype for styling
