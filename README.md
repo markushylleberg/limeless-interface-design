@@ -1,7 +1,7 @@
 # Limeless-interface-design
 Final project for our interface design class
 
-# Techologies
+## Techologies
 
         html, php, css, javascript, jquery(ajax)
 
