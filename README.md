@@ -7,7 +7,7 @@ Final project for our interface design class
 
 ## Programming guidelines
 
-##1 Mobile first
+<b>Mobile first</b>
 
         We will code this application in mobile first
 
