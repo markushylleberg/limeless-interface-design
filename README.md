@@ -13,6 +13,11 @@ Final project for our interface design class
 
 ##2 Naming conventions
 
+        (JS) Write the javascript in a OOP matter
+
+        (JS) Base function names on their action - descripe what they do
+            eg. functions like; function showFilter(){};
+
         (JS) camelCase for javascript variables and functions
             eg. functions like; function myFunction(){};
             eg. variables like; const firstName = 'John';
