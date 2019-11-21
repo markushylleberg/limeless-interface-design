@@ -711,9 +711,29 @@ input[type=checkbox]:checked:after {
     grid-column: auto / span 4;
 }
 
-    /* -----> 3.4 tablet (max 940px) */
 
-@media all and (max-width: 940px){
+    /* -----> 3.4 small desktop (max 1024px) */
+
+@media all and (max-width: 1024px){
+
+    .md-col-12{
+        grid-column: auto / span 12!important;
+    }
+        
+    .md-col-6{
+        grid-column: auto / span 6!important;
+    }
+        
+    .md-col-4{
+        grid-column: auto / span 4!important;
+    }
+    
+}
+
+
+    /* -----> 3.4 tablet (max 768px) */
+
+@media all and (max-width: 768px){
 
     .sm-col-12{
         grid-column: auto / span 12!important;
@@ -729,9 +749,9 @@ input[type=checkbox]:checked:after {
 
 }
 
-    /* -----> 3.4 phone (max 530px) */
+    /* -----> 3.4 phone (max 414px) */
 
-@media all and (max-width: 530px){
+@media all and (max-width: 414px){
 
     .xs-col-12{
         grid-column: auto / span 12!important;
