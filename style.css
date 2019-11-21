@@ -181,8 +181,14 @@ i{
     padding: 10px 16px;
     margin: 10px;
     transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover{
@@ -204,8 +210,14 @@ i{
     padding: 10px 16px;
     margin: 10px;
     transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary:hover{
@@ -227,8 +239,14 @@ i{
     padding: 10px 16px;
     margin: 10px;
     transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-white:hover{
@@ -266,6 +284,8 @@ input[type=text]{
     border: 0;
     border-radius: 8px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);    
+    -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -388,6 +408,10 @@ input[type=checkbox]:checked:after {
     overflow: hidden;
     position: absolute;
     transition: .15s ease;
+    -webkit-transition: .15s ease;
+    -moz-transition: .15s ease;
+    -o-transition: .15s ease;
+    transition: .15s ease;
 }
 
 .checkbox-field-inner div{
@@ -430,11 +454,20 @@ input[type=checkbox]:checked:after {
     padding: 12px;
     cursor: pointer;
     box-shadow: 0;
+    -moz-box-shadow: 0;
+    -webkit-box-shadow: 0;
+    transition: .2s ease;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
     transition: .2s ease;
 }
 
 .tab:hover{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .tab p{
@@ -719,10 +752,14 @@ input[type=checkbox]:checked:after {
 
     .shadow-heavy{
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     }
 
     .shadow-light{
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
 
 
