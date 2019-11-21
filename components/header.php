@@ -27,6 +27,24 @@
             </li>
         </ul>
         <div class="avatar">avatar</div>
+        <div id="burger" class="hide-on-desktop">burger icon</div>
+        <div id="mobileMenuPanel">
+            <div class="inner">
+                <ul id="mobileMenu">
+                    <li class="menu-item">
+                        <a href="">Menu item</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="">Menu item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Menu item</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
