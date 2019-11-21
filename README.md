@@ -4,7 +4,6 @@ Final project for our interface design class
 ## Techologies
 
         html, php, css, javascript, jquery(ajax)
-        testing
 
 ## Programming guidelines
 
