@@ -38,8 +38,12 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body{
+body {
     background-color: #333333;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -139,6 +143,13 @@ h1, h2, h3, h4, h5, h6{
 p, span, label, input{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+}
+
+a {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 p{
@@ -688,7 +699,6 @@ input[type=checkbox]:checked:after {
 .align-center{
     display: grid;
     align-items: center;
-    justify-items: center;
 }
 
 
@@ -703,12 +713,20 @@ input[type=checkbox]:checked:after {
     grid-column: auto / span 12;
 }
 
+.col-10{
+    grid-column: auto / span 10;
+}
+
 .col-6{
     grid-column: auto / span 6;
 }
 
 .col-4{
     grid-column: auto / span 4;
+}
+
+.col-2{
+    grid-column: auto / span 2;
 }
 
 
@@ -719,6 +737,10 @@ input[type=checkbox]:checked:after {
     .md-col-12{
         grid-column: auto / span 12!important;
     }
+
+    .md-col-10{
+        grid-column: auto / span 10!important;
+    }
         
     .md-col-6{
         grid-column: auto / span 6!important;
@@ -726,6 +748,10 @@ input[type=checkbox]:checked:after {
         
     .md-col-4{
         grid-column: auto / span 4!important;
+    }
+
+    .md-col-2{
+        grid-column: auto / span 2!important;
     }
     
 }
@@ -738,6 +764,10 @@ input[type=checkbox]:checked:after {
     .sm-col-12{
         grid-column: auto / span 12!important;
     }
+
+    .sm-col-10{
+        grid-column: auto / span 10!important;
+    }
     
     .sm-col-6{
         grid-column: auto / span 6!important;
@@ -745,6 +775,10 @@ input[type=checkbox]:checked:after {
     
     .sm-col-4{
         grid-column: auto / span 4!important;
+    }
+
+    .sm-col-2{
+        grid-column: auto / span 2!important;
     }
 
 }
@@ -756,6 +790,10 @@ input[type=checkbox]:checked:after {
     .xs-col-12{
         grid-column: auto / span 12!important;
     }
+
+    .xs-col-10{
+        grid-column: auto / span 10!important;
+    }
     
     .xs-col-6{
         grid-column: auto / span 6!important;
@@ -763,6 +801,10 @@ input[type=checkbox]:checked:after {
     
     .xs-col-4{
         grid-column: auto / span 4!important;
+    }
+
+    .xs-col-2{
+        grid-column: auto / span 2!important;
     }
 
 }
@@ -785,12 +827,52 @@ input[type=checkbox]:checked:after {
 
 /* 4.0) ******************** CUSTOM CLASSES ******************** */ 
 
+/* tablet */
+@media all and (max-width: 768px){
+    .hide-on-mobile{
+        display: none;
+    }
+}
+
+/* desktop */
+@media all and (min-width: 769px){
+    .hide-on-desktop{
+        display: none;
+    }
+}
+
+.small-avatar{
+    max-width: 35px!important;
+    max-height: 35px!important;
+}
+
+.small-padding{
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.menu-item{
+    display: inline-block;
+}
+
 .border{
     border: 1px solid black;
 }
 
 .extra-height{
     height: 250px;
+}
+
+.super-height{
+    height: 1250px;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
 }
 
 .small-font{
