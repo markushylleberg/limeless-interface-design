@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipe.css">
     <title><?php echo $pageTitle ?></title>
 </head>
 <body>
