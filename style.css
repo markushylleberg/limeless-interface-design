@@ -452,7 +452,6 @@ input[type=checkbox]:checked:after {
     /* -----> 2.12) notifications */
 
 .notifications-panel{
-    border: 1px solid black;
     padding: 10px;
     width: 200px;
 }
