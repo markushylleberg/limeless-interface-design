@@ -1,12 +1,9 @@
 <!-- Import header from /components -->
-<?php require_once('components/header.php') ?>
+<?php
 
+$pageTitle = 'Home';
 
-
-
-
-
-
+require_once('components/header.php') ?>
 
 
 
