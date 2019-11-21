@@ -11,4 +11,27 @@
     <title><?php echo $pageTitle ?></title>
 </head>
 <body>
+<!-- Header -->
+<div id="headerContainer">
+    <div id="logoWrapper">
+        Logo her 
+        <!-- <img src="" alt="" id="logo"> -->
+    </div>
+    <div id="navigationWrapper">
+        <ul id="mainMenu" class="hide-on-mobile">
+            <li class="menu-item">
+                <a href="">Menu item 1</a>
+            </li>
+            <li class="menu-item">
+                <a href="">Menu item 2</a>
+            </li>
+        </ul>
+        <div class="avatar">avatar</div>
+    </div>
+</div>
+
+
+<!-- Page content container -->
+<div id="pageContent">
+
 
