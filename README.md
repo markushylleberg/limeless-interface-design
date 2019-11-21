@@ -27,6 +27,8 @@ Final project for our interface design class
 
         (CSS) We will try as much as we can to build our stylesheet based on our style guide
               and in that way build a framework to maintain consistancy on our site
+
+        (HTML & CSS & JS) ID's will always be refered as camelCase
     
 <b>XD & Style guide</b>
    

@@ -1,0 +1,651 @@
+/* LIMELESS STYLESHEET   
+
+
+        This stylesheet has been divided into seperate sections 
+        to make it easy to navigate through.
+
+        Use Ctrl+F to find these sections quick:
+
+            1) Basic styles of DOM
+
+            2) Limeless styles
+                2.1) background colors
+                2.2) font colors
+                2.3) typography
+                2.4) buttons
+                2.5) image styles
+                2.6) input type=text
+                2.7) input type=checkbox
+                2.8) has-float-label
+                2.9) select
+               2.10) checkbox-dropdown
+               2.11) tabs
+               2.12) notifications
+
+            3) Helper classes
+                3.1) margin (x & y)
+                3.2) padding
+                3.3) alignment
+                3.4) grid system
+                3.5) shadows
+
+            4.0) Custom classes
+
+ */
+
+
+/* 1) ******************** BASIC STYLES ******************** */ 
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+    background-color: #333333;
+}
+
+
+/* 2) ******************** LIMELESS STYLES ******************** */ 
+
+/* -----> 2.1 background colors */
+.primary{
+    background-color: #333333!important;
+}
+
+.secondary{
+    background-color: #5F5858!important;
+}
+
+.green{
+    background-color: #579144!important;
+}
+
+.lime{
+    background-color: #A2C92B!important;  
+}
+
+.light-green{
+    background-color: #A2C92B!important; 
+}
+
+.white-smoke{
+    background-color: #EDEDED!important;
+}
+
+.white{
+    background-color: #FFFFFF!important;
+}
+
+.danger{
+    background-color: #B54848!important;  
+}
+
+.warning{
+    background-color: #B5B762!important;
+}
+
+.info{
+    background-color: #55AAC4!important;
+}
+
+
+/* -----> 2.2 font colors */
+.text-primary{
+    color: #333333!important;
+}
+
+.text-secondary{
+    color: #5F5858!important;
+}
+
+.text-green{
+    color: #579144!important;
+}
+
+.text-lime{
+    color: #A2C92B!important;  
+}
+
+.text-light-green{
+    color: #A2C92B!important; 
+}
+
+.text-white-smoke{
+    color: #EDEDED!important;
+}
+
+.text-white{
+    color: #FFFFFF!important;
+}
+
+.text-danger{
+    color: #B54848!important;  
+}
+
+.text-warning{
+    color: #B5B762!important;
+}
+
+.text-info{
+    color: #55AAC4!important;
+}
+
+
+/* -----> 2.3 typography */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
+    color: #FFFFFF!important;
+}
+
+p, span, label, input{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+p{
+    color: #FFFFFF!important;
+}
+
+span{
+    margin-left: 15px;
+}
+
+button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+/* -----> 2.4 buttons */
+i{
+    padding: 5px;
+}
+
+.btn-big{
+    padding: 17px 27px!important;
+}
+
+.btn-small{
+    padding: 3px!important;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%!important;
+}
+
+    /* ----->  primary button */
+
+.btn-primary{
+    background-color: #579144;
+    color: #ffffff;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    padding: 10px 16px;
+    margin: 10px;
+    transition: .2s ease;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover{
+    background-color: #69ac53;
+}
+
+.btn-primary:active{
+    background-color: #A2C92B;   
+}
+
+    /* ----->  secondary button */
+
+.btn-secondary{
+    background-color: #5F5858;
+    color: #ffffff;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    padding: 10px 16px;
+    margin: 10px;
+    transition: .2s ease;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary:hover{
+    background-color: #776f6f;
+}
+
+.btn-secondary:active{
+    background-color: #8f8585;
+}
+
+    /* ----->  white button */
+
+.btn-white{
+    background-color: #EDEDED;
+    color: #333333;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    padding: 10px 16px;
+    margin: 10px;
+    transition: .2s ease;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white:hover{
+    background-color: #f5f5f5;
+}
+
+.btn-white:active{
+    background-color: #ffffff;
+
+}
+
+/* -----> 2.5 image styles */
+
+.round-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.square-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+    /* -----> 2.6) input text */
+
+input[type=text]{
+    padding: 15px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);    
+}
+
+
+    /* -----> 2.7) input checkbox */
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      outline: 0;
+}
+input[type=checkbox]:before {
+    background-color: #ededed;
+    border: 1px solid #ededed;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 16px;
+    left: -6px;
+    position: absolute;
+    width: 16px;
+    top: -4px;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #333333;
+    border-radius: 5%;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    position: absolute;
+    top: -3px;
+    left: -1px;
+}
+
+
+    /* -----> 2.8) has-float-label */
+
+.has-float-label input:placeholder-shown:not(:focus)+*, .has-float-label select:placeholder-shown:not(:focus)+*, .has-float-label textarea:placeholder-shown:not(:focus)+*{
+    top: 1em!important;
+}
+    
+.has-float-label input{
+    font-size: 15px!important;
+}
+
+
+
+    /* -----> 2.9) select */
+    /* -----> 2.10) checkbox-dropdown */
+
+.checkbox-field{
+    width: 100px;
+    height: 25px;
+    position: relative;
+    display: flex;
+    background-color: #333333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px 0 5px 10px;
+}
+
+.select-field{
+    width: 140px;
+    height: 25px;
+    position: relative;
+    display: flex;
+    background-color: #333333;
+    border-radius: 0px;
+    border: 1px solid #ededed94;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 4px 12px;
+}
+
+.select-option{
+    cursor: pointer;
+}
+
+.select-field-inner :first-child{
+    border-top: none!important;
+}
+
+.select-option p{
+    pointer-events: none;
+    margin-left: 20px;
+}
+
+.select-option::before{
+    content: "\f111";
+    color: #ffffff;
+    position: absolute;
+    font-family: FontAwesome;
+    pointer-events: none;
+}
+
+.select-option.active::before{
+    content: "\f28d"!important;
+}
+
+.checkbox-field::after, .select-field::after{
+    content: "\f078";
+    color: #ffffff;
+    position: absolute;
+    font-family: FontAwesome;
+    text-align: right;
+    float: right;
+    width: 100%;
+    right: 8px;
+}
+
+.checkbox-field-inner, .select-field-inner{
+    width: 200px;
+    transform: scaleY(0);  
+    transform-origin: top;
+    background-color: #333333;
+    overflow: hidden;
+    position: absolute;
+    transition: .15s ease;
+}
+
+.checkbox-field-inner div{
+    padding: 15px 0;
+    margin: 0 1em;
+}
+
+.select-field-inner div{
+    padding: 15px 0;
+    margin: 0 1em;
+    border-top: 1px solid #ededed3c;
+}
+
+.checkbox-field-inner.active{
+    margin-top: -7px;
+    transform: scaleY(1);
+}
+
+.select-field-inner.active{
+    transform: scaleY(1);
+}
+
+.checkbox-field.active::after, .checkbox-field.active::after{
+    content: "\f077";
+}
+
+.outer-checkbox-selection, .outer-selection{
+    z-index: 100;
+    height: 100%;
+    width: 220px;
+}
+
+
+    /* -----> 2.11) tabs */
+.tab{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0;
+    transition: .2s ease;
+}
+
+.tab:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tab p{
+    pointer-events: none;
+    font-weight: 400;
+    opacity: .25;
+}
+
+.tab.active p{
+    opacity: 1;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+    /* -----> 2.12) notifications */
+
+.notifications-panel{
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+}
+
+.notification-item{
+    display: flex;
+    margin: 5px 0;
+    padding: 14px 0;
+    border-bottom: 1px solid #ededed3c;
+}
+
+.notifications-panel :last-child{
+    border-bottom: none!important;
+}
+
+.notification-item span {
+    top: 1px;
+    position: relative;
+    display: block;
+    height: 12px;
+    min-width: 12px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #55AAC4!important;
+    color: #55AAC4!important;
+}
+
+.notification-item p {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #ededed!important; 
+}
+
+.notification-item i {
+    position: relative;
+    color: white;
+    top: -6px;
+    cursor: pointer;
+}
+
+
+
+/* 3) ******************** HELPER CLASSES ******************** */ 
+
+/* -----> 3.1 margin */
+.m-1{
+    margin: 1rem;
+}
+
+.m-2{
+    margin: 2rem;
+}
+
+.m-3{
+    margin: 3rem;
+}
+
+.m-4{
+    margin: 4rem;
+}
+
+.m-5{
+    margin: 5rem;
+}
+
+/* -----> 3.2 padding */
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.p-3{
+    padding: 3rem;
+}
+
+.p-4{
+    padding: 4rem;
+}
+
+.p-5{
+    padding: 5rem;
+}
+
+/* -----> 3.3 alignment */
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.align-center{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* -----> 3.4 grid system */
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.col-12{
+    grid-column: auto / span 12;
+}
+
+.col-6{
+    grid-column: auto / span 6;
+}
+
+.col-4{
+    grid-column: auto / span 4;
+}
+
+    /* -----> 3.4 tablet (max 940px) */
+
+@media all and (max-width: 940px){
+
+    .sm-col-12{
+        grid-column: auto / span 12!important;
+    }
+    
+    .sm-col-6{
+        grid-column: auto / span 6!important;
+    }
+    
+    .sm-col-4{
+        grid-column: auto / span 4!important;
+    }
+
+}
+
+    /* -----> 3.4 phone (max 530px) */
+
+@media all and (max-width: 530px){
+
+    .xs-col-12{
+        grid-column: auto / span 12!important;
+    }
+    
+    .xs-col-6{
+        grid-column: auto / span 6!important;
+    }
+    
+    .xs-col-4{
+        grid-column: auto / span 4!important;
+    }
+
+}
+
+
+    /* -----> 3.5 shadows  */
+
+    .shadow-heavy{
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .shadow-light{
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+/* 4.0) ******************** CUSTOM CLASSES ******************** */ 
+
+.border{
+    border: 1px solid black;
+}
+
+.extra-height{
+    height: 250px;
+}
+
+.small-font{
+    font-size: 10px!important;
+}
+
+.margin-top{
+    margin-top: 1rem;
+}
+
+.relative{
+    position: relative;
+    width: 160px;
+}
