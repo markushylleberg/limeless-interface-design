@@ -1,7 +1,7 @@
 <!-- Import header from /components -->
-<?php require_once('components/header.php') ?>
-
-
+<?php 
+$pageTitle = 'Profile';
+require_once('components/header.php') ?>
 
 
 
@@ -16,7 +16,7 @@
             </div>
             <div class="title-wrapper">
                 <h4>Hello, Martha!</h4>
-            </div>
+
             <div class="row edit-profile-btn btn-primary">
                 <i class="fa fa-pencil"></i>
                 <p>Edit profile</p>
@@ -71,7 +71,6 @@
             </div>
         </div>
 
-        <div class="head tabs-section">
             <div id="recipes" class="row">
 
                 <!-- Test recipe 1 -->
@@ -135,118 +134,118 @@
                 </div>
 
             </div>
-        </div>
 
-        <div id="pantries" class="row">
-            <div class="pantry xs-col-12 m-1">
+            <div id="pantries" class="row">
 
-                <div class="pantry-head row">
-                    <div class="head-section xs-col-6">
-                        <p class="explainer">Greens</p>
+                <article class="pantry xs-col-12 m-1">
+                    <div class="pantry-head row">
+                        <div class="head-section xs-col-6">
+                            <p class="explainer">Greens</p>
+                        </div>
+                        <div class="head-section xs-col-6">
+                            <p class="explainer">Qty</p>
+                        </div>
                     </div>
-                    <div class="head-section xs-col-6">
-                        <p class="explainer">Qty</p>
-                    </div>
-                </div>
 
-                <div class="pantry-body">
-                    <div class="pantry-entry row">
-                        <p class="title">Carrots</p>
-                        <div class="qty row">
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-plus"></i>
+                    <div class="pantry-body">
+                        <div class="pantry-entry row">
+                            <p class="title">Carrots</p>
+                            <div class="qty row">
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <span>2</span>   
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-minus"></i>
+                                </div>
                             </div>
-                            <span>2</span>   
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-minus"></i>
-                            </div>
+                            <p class="delete-btn danger">Delete</p>
                         </div>
-                        <p class="delete-btn danger">Delete</p>
-                    </div>
-                    <div class="pantry-entry row">
-                        <p class="title">Carrots</p>
-                        <div class="qty row">
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-plus"></i>
+                        <div class="pantry-entry row">
+                            <p class="title">Carrots</p>
+                            <div class="qty row">
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <span>2</span>   
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-minus"></i>
+                                </div>
                             </div>
-                            <span>2</span>   
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-minus"></i>
-                            </div>
+                            <p class="delete-btn danger">Delete</p>
                         </div>
-                        <p class="delete-btn danger">Delete</p>
-                    </div>
-                    <div class="pantry-entry row">
-                        <p class="title">Carrots</p>
-                        <div class="qty row">
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-plus"></i>
+                        <div class="pantry-entry row">
+                            <p class="title">Carrots</p>
+                            <div class="qty row">
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <span>2</span>   
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-minus"></i>
+                                </div>
                             </div>
-                            <span>2</span>   
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-minus"></i>
-                            </div>
+                            <p class="delete-btn danger">Delete</p>
                         </div>
-                        <p class="delete-btn danger">Delete</p>
                     </div>
-                </div>
+                </article>
+
+                <article class="pantry xs-col-12 m-1">
+
+                    <div class="pantry-head row">
+                        <div class="head-section xs-col-6">
+                            <p class="explainer">Greens</p>
+                        </div>
+                        <div class="head-section xs-col-6">
+                            <p class="explainer">Qty</p>
+                        </div>
+                    </div>
+
+                    <div class="pantry-body">
+                        <div class="pantry-entry row">
+                            <p class="title">Carrots</p>
+                            <div class="qty row">
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <span>2</span>   
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <p class="delete-btn danger">Delete</p>
+                        </div>
+                        <div class="pantry-entry row">
+                            <p class="title">Carrots</p>
+                            <div class="qty row">
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <span>2</span>   
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <p class="delete-btn danger">Delete</p>
+                        </div>
+                        <div class="pantry-entry row">
+                            <p class="title">Carrots</p>
+                            <div class="qty row">
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <span>2</span>   
+                                <div class="btn-secondary btn-small">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <p class="delete-btn danger">Delete</p>
+                        </div>
+                    </div>
+                </article>
+                
             </div>
 
-
-            <div class="pantry xs-col-12 m-1">
-
-                <div class="pantry-head row">
-                    <div class="head-section xs-col-6">
-                        <p class="explainer">Greens</p>
-                    </div>
-                    <div class="head-section xs-col-6">
-                        <p class="explainer">Qty</p>
-                    </div>
-                </div>
-
-                <div class="pantry-body">
-                    <div class="pantry-entry row">
-                        <p class="title">Carrots</p>
-                        <div class="qty row">
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                            <span>2</span>   
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-minus"></i>
-                            </div>
-                        </div>
-                        <p class="delete-btn danger">Delete</p>
-                    </div>
-                    <div class="pantry-entry row">
-                        <p class="title">Carrots</p>
-                        <div class="qty row">
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                            <span>2</span>   
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-minus"></i>
-                            </div>
-                        </div>
-                        <p class="delete-btn danger">Delete</p>
-                    </div>
-                    <div class="pantry-entry row">
-                        <p class="title">Carrots</p>
-                        <div class="qty row">
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                            <span>2</span>   
-                            <div class="btn-secondary btn-small">
-                                <i class="fa fa-minus"></i>
-                            </div>
-                        </div>
-                        <p class="delete-btn danger">Delete</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
