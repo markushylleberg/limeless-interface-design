@@ -50,7 +50,7 @@ class UI {
         for ( let i = 0; i < tabId.children.length; i++ ){
 
             if ( tabId.children[i].innerText == el ){
-                tabId.children[i].classList.toggle('active');
+                tabId.children[i].classList.add('active');
             } else {
                 tabId.children[i].classList.remove('active');
             }
