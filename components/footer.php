@@ -1,6 +1,10 @@
-    
-</div> <!-- end of #pageContent -->
+    <div id="footerContainer">
+        <div id="copyrightWrapper">
+            <p class="text-right m-1">Copyright &copy; <?php echo date('Y'); ?></p>
+        </div>
+    </div>
 
+</div> <!-- end of #pageContent -->
 
 <!-- Scripts -->
 
