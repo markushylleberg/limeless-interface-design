@@ -10,6 +10,14 @@ Final project for our interface design class
 <b>Mobile first</b>
 
         We will code this application in mobile first
+        
+        Mobile: max 414px
+        
+        Tablet: max 768px
+        
+        Small desktop: max 1024px
+        
+        Desktop: max 1200px
 
 <b>Naming conventions</b>
 
