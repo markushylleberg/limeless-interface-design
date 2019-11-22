@@ -72,12 +72,34 @@ class UI {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
 
+                UI.applyOverlayToPageContent();
+
             } else {
 
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
 
+                UI.removeOverlayToPageContent();
+                
+
             }
+
+    }
+
+    static applyOverlayToPageContent(){
+
+        const pageContent = one('#pageContent');
+        const logoWrapper = one('#logoWrapper');
+
+        pageContent.classList.add('overlay');
+        logoWrapper.classList.add('logo-overlay');
+
+    }
+
+    static removeOverlayToPageContent(){
+
+        pageContent.classList.remove('overlay');
+        logoWrapper.classList.remove('logo-overlay');
 
     }
 
@@ -105,6 +127,5 @@ one('body').addEventListener('click', (e) => {
 
         UI.openBurgerMenu()
     
-    }
-;
+    };
 })
