@@ -1,7 +1,7 @@
 <!-- Import header from /components -->
 <?php 
 $pageTitle = 'Login';
-require_once('components/header.php') ?>
+require_once('../components/header.php') ?>
 <div id="imageBackground">
     <div class="overlay">
         <article id="loginContainer">
@@ -20,4 +20,4 @@ require_once('components/header.php') ?>
 </div>
 
 <!-- Import footer from /components -->
-<?php require_once('components/footer.php') ?>
+<?php require_once('../components/footer.php') ?>

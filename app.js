@@ -58,6 +58,29 @@ class UI {
 
     }
 
+    static openBurgerMenu(){
+        
+        one('#mobileMenuPanel').classList.toggle('active');
+
+            // change icon when active
+
+            let icon = one('#burger i');
+            let burgerIconClass = one('#burger i').classList.contains('fa-bars');
+
+            if ( one('#mobileMenuPanel').classList.contains('active') && burgerIconClass ){
+                
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+
+            } else {
+
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+
+            }
+
+    }
+
 }
 
 
@@ -78,5 +101,10 @@ one('body').addEventListener('click', (e) => {
         let selectedTabElement = e.target.innerText;
 
         UI.changeTab(tabContainerId, selectedTabElement);
-    };
+    } else if ( e.target.id == 'burger' ) {
+
+        UI.openBurgerMenu()
+    
+    }
+;
 })

@@ -5,7 +5,7 @@ $pageTitle = 'Example page';
 
 require_once('components/header.php') ?>
 
-
+<div class="extra-height"></div>
 
 <h1 class="m-3 text-center"><u>Examples for using our stylesheet</u></h1>
 

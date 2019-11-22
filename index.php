@@ -254,9 +254,6 @@ require_once('components/header.php') ?>
 </div>
 
 
-require_once('components/header.php') ?>
-
-
 
 
 
