@@ -91,15 +91,15 @@ class UI {
         const pageContent = one('#pageContent');
         const logoWrapper = one('#logoWrapper');
 
-        pageContent.classList.add('overlay');
-        logoWrapper.classList.add('logo-overlay');
+        pageContent.classList.add('opacity-overlay');
+        logoWrapper.classList.add('opacity-logo-overlay');
 
     }
 
     static removeOverlayToPageContent(){
 
-        pageContent.classList.remove('overlay');
-        logoWrapper.classList.remove('logo-overlay');
+        pageContent.classList.remove('opacity-overlay');
+        logoWrapper.classList.remove('opacity-logo-overlay');
 
     }
 
