@@ -10,7 +10,7 @@ require_once('components/header.php') ?>
 <div class="columns">
 
     <!-- Left section w. profile details -->
-    <div id="profile">
+    <div id="profile" class="left">
         <div class="head profile-section">
             <div class="image-wrapper">
                 <!-- Avatar -->
@@ -50,7 +50,7 @@ require_once('components/header.php') ?>
         </div>
     </div>
 
-    <div id="tabs">
+    <div id="tabs" class="right">
 
         <div class="head tabs-section">
             <div class="tab">
