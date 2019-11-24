@@ -16,32 +16,41 @@ require_once('components/header.php') ?>
 
     <div class="overlay max-vh">
         <article id="loginContainer">
-            <div class="title-wrapper p-3 text-center">
+            <div class="title-wrapper py-2 text-center">
                 <h2>Your virtual pantry</h2>
-                <p class="tagline">The easy way to keep track</p>
+                <p class="tagline my-1">The easy way to keep track</p>
             </div>
-            <form action="POST" id="login" class="mx-3 px-4">
-                <p class="m-1">Login</p>
+            <form action="POST" id="login" class="login-form px-1">
+                <p class="text-center bold">Login</p>
 
-                <div class="m-1 col-12">
+                <div class="col-12 my-1">
                     <label class="has-float-label small-font">
-                        <input type="text" name="txtEmail" placeholder="Your email">
+                        <input type="text" id="txtEmail" name="txtEmail" oninput="UI.clearErrorMessage()" placeholder="Your email">
                     <span>E-mail</span>
                     </label>
                 </div>
 
-                <div class="m-1 col-12">
+                <div class="col-12 my-1">
                     <label class="has-float-label small-font">
-                        <input type="text" name="txtPassword" placeholder="Insert password">
+                        <input type="text" id="txtPassword" name="txtPassword" oninput="UI.clearErrorMessage()" placeholder="Insert password">
                     <span>Password</span>
                     </label>
                 </div>
 
-                <div class="text-right m-1">
-                    <button class="btn-primary btn-big">Login</button>
+                <p id="errorMessage" class="my-1 text-danger error-message"></p>
+
+                <div class="text-right my-1">
+                    <button id="login" class="btn-primary btn-big">Login</button>
                 </div>
+            </div>
             </form>
         </article>
+
+        <div class="not-a-member text-center">
+            <p>Not a member?</p>
+            <a href="signup.php" class="underline">Create an account</a>
+        </div>
+
     </div>
 
 

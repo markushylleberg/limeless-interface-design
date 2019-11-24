@@ -1,6 +1,6 @@
     <div id="footerContainer" class="footer">
         <div id="copyrightWrapper" class="row max-vw">
-            <p class="col-12 text-right mx-2">Limeless &copy; <?php echo date('Y'); ?> Copyright</p>
+            <p class="col-12 text-right mx-1 p-1">Limeless &copy; <?php echo date('Y'); ?> Copyright</p>
         </div>
     </div>
 

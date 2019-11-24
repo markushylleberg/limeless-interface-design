@@ -7,6 +7,53 @@
     all = function(el){ return document.querySelectorAll(el) }
 
 
+class API {
+
+    static loginRequest(e) {
+
+        e.preventDefault();
+
+        const loginEmail = one('#txtEmail').value;
+        const loginPassword = one('#txtPassword').value;
+
+        let errorMessage = one('#errorMessage');
+        let errorMessageOpacity = one('.error-message');
+
+        if ( loginEmail == '' || loginPassword == '' ){
+            errorMessage.innerText = 'Please enter a valid email and password';
+            errorMessageOpacity.style.opacity = '1';
+        }
+
+        console.log('Email: '+loginEmail);
+        console.log('Password: '+loginPassword);
+
+    }
+
+    static signUpRequest(e) {
+
+        e.preventDefault();
+
+        const signupFirstName = one('#signupFirstName').value;
+        const signupLastName = one('#signupLastName').value;
+        const signupEmail = one('#signupEmail').value;
+        const signupPassword = one('#signupPassword').value;
+
+        let errorMessage = one('#errorMessage');
+        let errorMessageOpacity = one('.error-message');
+
+        if ( signupFirstName == '' || signupLastName == '' || signupEmail == '' || signupPassword == '' ) {
+
+            errorMessage.innerText = 'Please fill out all the fields';
+            errorMessageOpacity.style.opacity = '1';
+
+        }
+
+        console.log(signupFirstName+' '+signupLastName+' '+signupEmail+' '+signupPassword);
+
+    }
+
+}
+
 class UI {
 
     static openOptionsOnSelectElement(id) {
@@ -90,9 +137,11 @@ class UI {
 
         const pageContent = one('#pageContent');
         const logoWrapper = one('#logoWrapper');
+        const imageBackground = one('#imageBackground');
 
         pageContent.classList.add('opacity-overlay');
         logoWrapper.classList.add('opacity-logo-overlay');
+        imageBackground.classList.add('opacity-overlay');
 
     }
 
@@ -100,7 +149,17 @@ class UI {
 
         pageContent.classList.remove('opacity-overlay');
         logoWrapper.classList.remove('opacity-logo-overlay');
+        imageBackground.classList.remove('opacity-overlay');
 
+    }
+
+    static clearErrorMessage(){
+
+        let errorMessage = one('#errorMessage');
+        let errorMessageOpacity = one('.error-message');
+
+        errorMessage.innerText = '';
+        errorMessageOpacity.style.opacity = '0';
     }
 
 }
@@ -110,6 +169,8 @@ class UI {
 // ******* Event listeners ***********
 
 one('body').addEventListener('click', (e) => {
+
+    // select-option event listener
     if (e.target.classList.contains('select-option')) {
 
         let selectionFieldId = e.target.parentElement.id;
@@ -117,15 +178,35 @@ one('body').addEventListener('click', (e) => {
 
         UI.changeSelection(selectionFieldId, selectedElementText);
 
-    } else if ( (e.target.classList.contains('tab')) ) {
+    }; 
+    
+    // tab event listerner
+    if ( (e.target.classList.contains('tab')) ) {
 
         let tabContainerId = e.target.parentElement.id;
         let selectedTabElement = e.target.innerText;
 
         UI.changeTab(tabContainerId, selectedTabElement);
-    } else if ( e.target.id == 'burger' ) {
+    }; 
 
-        UI.openBurgerMenu()
+    // burger event listener
+    if ( e.target.id == 'burger' ) {
+
+        UI.openBurgerMenu();
     
     };
+
+    // login event listener
+    if ( e.target.id == 'login' ) {
+
+        API.loginRequest(e);
+
+    }
+
+    // signup event listener
+    if ( e.target.id == 'signup' ) {
+
+        API.signUpRequest(e);
+
+    }
 })

@@ -13,7 +13,7 @@
 <body>
 <!-- Header -->
 <div class="header-max-width">
-<div id="headerContainer" class="fixed row p-1 z-index-9">
+<div id="headerContainer" class="fixed row m-1 px-1 z-index-9">
     <div id="logoWrapper" class="col-6 md-col-2 z-index-10">
         <a href="index.php"><img src="src/logo/logo.png" class="logo" id="logo"></a>
     </div>
@@ -32,7 +32,7 @@
         <div class="avatar text-right col-2 sm-col-10 z-index-10">
             <a href="profile.php"><img src="src/images/test-user.png" class="round-img small-avatar mx-1"></a>
         </div>
-        <div id="burger" class="z-index-10 hide-on-desktop align-center unclickable-icon"><i class="fa fa-bars text-white"></i></div>
+        <div id="burger" class="z-index-10 hide-on-desktop align-center unclickable-icon mx-1"><i class="fa fa-bars text-white"></i></div>
         <div id="mobileMenuPanel" class="hide-on-desktop mobile-menu-panel shadow-heavy">
             <div class="py-3 inner text-left">
                 <ul id="mobileMenu">
@@ -70,11 +70,11 @@
 
 <?php
 
-    $isLandingPage = ( $pageTitle == 'Home' ? 'login-image-background' : '');
+    $isLandingPage = ( ($pageTitle == 'Home' || $pageTitle == 'Sign up') ? 'login-image-background' : '');
 
 ?>
 
-<div class="<?php echo $isLandingPage ?>">
+<div id="imageBackground" class="<?php echo $isLandingPage ?>">
 
 <div id="pageContent" class="page-content">
 
