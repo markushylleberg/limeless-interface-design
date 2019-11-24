@@ -5,7 +5,6 @@ $pageTitle = 'Home';
 
 require_once('components/header.php') ?>
 
-
 <!-- Page stucture on this index page -->
 
     <!-- 1 if the user is not logged in 
@@ -13,6 +12,7 @@ require_once('components/header.php') ?>
 
         else if user has a $_SESSION
         -> go to profile.php -->
+
 
     <div class="overlay max-vh">
         <article id="loginContainer">
