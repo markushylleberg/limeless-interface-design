@@ -1,7 +1,14 @@
 <!-- Import header from /components -->
 <?php 
 $pageTitle = 'Sign up';
-require_once('components/header.php') ?>
+require_once('components/header.php');
+
+if ( $session == true ){
+    header('Location: profile.php');
+    exit;
+}
+
+?>
 
 
     <div class="overlay">
@@ -36,7 +43,7 @@ require_once('components/header.php') ?>
 
                 <div class="col-12 my-1">
                     <label class="has-float-label small-font">
-                        <input type="text" id="signupPassword" name="txtSignupPassword" oninput="UI.clearErrorMessage()" placeholder="Choose a password">
+                        <input type="password" id="signupPassword" name="txtSignupPassword" oninput="UI.clearErrorMessage()" placeholder="Choose a password">
                     <span>Password</span>
                     </label>
                 </div>

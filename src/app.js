@@ -65,10 +65,20 @@ class UI {
 
     }
 
+    static switchProfileTabs(id){
+
+        let recipesContainer = one('#recipes');
+        let pantriesContainer = one('#pantries');
+
+        recipesContainer.classList.toggle('hidden');
+        pantriesContainer.classList.toggle('hidden');
+    }
+
     static changeSelection(id, el){
 
         // 1) set the text of the new element in the select
         one('#'+id).parentElement.firstElementChild.firstElementChild.innerText = el;
+        one('#pantrySelected').innerText = el;
 
         // 2) toggle class 'active' to new element and remove from elsewhere
         let selectionContainer = one('#'+id);
@@ -162,6 +172,41 @@ class UI {
         errorMessageOpacity.style.opacity = '0';
     }
 
+    static toggleShowHideNotificaitons(){
+        let noticationsPanel = one('#notificationsPanel').firstElementChild;
+        let hideShowButton = one('#showHideNotificationsButton');
+        let clearAllButton = one('#clearAllNotificationsButton');
+
+        noticationsPanel.classList.toggle('hidden');
+
+        if ( noticationsPanel.classList.contains('hidden') ){
+            hideShowButton.innerText = 'Show';
+            clearAllButton.classList.toggle('hidden');
+        } else {
+            hideShowButton.innerText = 'Hide';
+            clearAllButton.classList.toggle('hidden');
+        }
+    }
+
+    static clearNotifications(){
+        let noticationsPanel = all('.notification-item');
+
+        for ( let i = 0; i < noticationsPanel.length; i++ ){
+            noticationsPanel[i].remove();
+        }
+
+        UI.updateNotificationsCount();
+    }
+
+    static updateNotificationsCount(){
+
+        let textBlock = one('.explainer p');
+        let noticationsCount = all('.notification-item').length;
+
+        textBlock.innerText = 'You have '+noticationsCount+' new notifications';
+
+    }
+
 }
 
 
@@ -205,8 +250,21 @@ one('body').addEventListener('click', (e) => {
 
     // signup event listener
     if ( e.target.id == 'signup' ) {
-
         API.signUpRequest(e);
-
     }
+
+    // Hide/show notications event listenrer
+    if ( e.target.id == 'showHideNotificationsButton' ){
+        UI.toggleShowHideNotificaitons();
+    }
+
+    // Profile tabs
+    if ( e.target.id == 'recipesTab' || e.target.id == 'pantriesTab' ){
+        UI.switchProfileTabs(e.target.id);
+    }
+
+    if ( e.target.id == 'clearAllNotificationsButton' ) {
+        UI.clearNotifications();
+    }
+
 })

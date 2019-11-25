@@ -3,7 +3,15 @@
 
 $pageTitle = 'Home';
 
-require_once('components/header.php') ?>
+require_once('components/header.php');
+
+if ( $session == true ){
+    header('Location: profile.php');
+    exit;
+}
+
+
+?>
 
 <!-- Page stucture on this index page -->
 
@@ -32,7 +40,7 @@ require_once('components/header.php') ?>
 
                 <div class="col-12 my-1">
                     <label class="has-float-label small-font">
-                        <input type="text" id="txtPassword" name="txtPassword" oninput="UI.clearErrorMessage()" placeholder="Insert password">
+                        <input type="password" id="txtPassword" name="txtPassword" oninput="UI.clearErrorMessage()" placeholder="Insert password">
                     <span>Password</span>
                     </label>
                 </div>

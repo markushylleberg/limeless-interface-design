@@ -20,10 +20,10 @@
     // adjustments for the navigation for whether or not the user is logged in
 
     // Show "sign out" or "sign in"
-    $signOutOrIn = ($session ? '<a href="signout.php">Log out</a>' : '<a href="signup.php">Login / sign up</a>');
+    $signOutOrIn = ($session ? '<a href="signout.php">Log out</a>' : '<a href="signup.php">Sign up</a>');
 
     // Show avatar or nah
-    $showAvatar = ($session ? '<a href="profile.php"><img src="src/images/test-user.png" class="round-img small-avatar mx-1"></a>' : '');
+    $showAvatar = ($session ? '<a href="profile.php"><img src="src/images/test-martha.jpg" class="round-img small-avatar mx-1"></a>' : '');
 
     // Adjust the columns in the navigation or nah
     $columnCount = ($session ? 'col-10' : 'col-12');
@@ -34,13 +34,16 @@
     // Show "Profile" if user is logged in or nah
     $profileOrSignup = ($session ? '<a href="profile.php">Profile</a>' : '<a href="signup.php">Sign up</a>');
 
+    // Apply background color to nav or nah
+    $navBackground = ( ($pageTitle == 'Home' || $pageTitle == 'Sign up') ? '' : 'nav-background-color');
+
 ?>
 
 
 
 <!-- Header -->
 <div class="header-max-width">
-<div id="headerContainer" class="fixed row m-1 px-1 z-index-9">
+<div id="headerContainer" class="fixed row p-1 z-index-9 <?php echo $navBackground ?>">
     <div id="logoWrapper" class="col-6 md-col-2 z-index-10">
         <a href="index.php"><img src="src/logo/logo.png" class="logo" id="logo"></a>
     </div>

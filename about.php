@@ -4,18 +4,16 @@ $pageTitle = 'Login';
 require_once('components/header.php') ?>
 
 <div class="columns row mx-1">
-    <div id="onePageNavigation" class="sm-col-12 col-4 mx-1 py-2">
-        <div class="about-right-border">
+    <div id="onePageNavigation" class="sm-col-12 col-3 mx-1 py-2">
         <div class="about-left-nav">
-            <div class="page-title">
-                <h2>About</h2>
-            </div>
+            <div class="page-title about-right-border mx-1 px-1">
+                <h2 class="">About</h2>
                 <a href="#whatWhyWho" class="hide-on-mobile py-1 about-nav">What, Why, Who</a>
                 <a href="#dataPolicy"class="hide-on-mobile py-1 about-nav">Data Policy</a>
             </div>
         </div>
         </div>
-    <div id="about" class="sm-col-12 col-8 mx-1">
+    <div id="about" class="sm-col-12 col-9 mx-1">
         <article id="whatWhyWho" class="about-article py-2">
             <p class="my-1 sub-headline">What, why, who?</p>
             <p>Limeless is a web service created by Kamille Rye and Markus Hylleberg.<br><br>

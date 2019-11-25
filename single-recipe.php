@@ -5,7 +5,7 @@ require_once('components/header.php') ?>
 
 
 
-
+<h2>Single recipe</h2>
 
 
 
