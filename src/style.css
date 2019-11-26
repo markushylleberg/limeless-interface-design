@@ -233,7 +233,7 @@ i{
     outline: 0;
     border: 0;
     padding: 10px 32px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     transition: .2s ease;
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
@@ -310,6 +310,32 @@ i{
     background-color: #ffffff;
     opacity: 1;
 
+}
+
+.btn-warning{
+    background-color: #B5B762;
+    color: #333333;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    padding: 10px 32px;
+    margin: 10px 0;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 8px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-warning:hover{
+    background-color: rgb(206, 207, 112);
+}
+
+.btn-warning:active{
+    background-color: rgb(206, 207, 112);
 }
 
 /* -----> 2.5 image styles */
@@ -1297,4 +1323,13 @@ input[type=checkbox]:checked:after {
 
 .absolute{
     position: absolute;
+}
+
+.low-brightness{
+    filter: brightness(.5);
+}
+
+.new-pantry-section{
+    filter: brightness(1);
+    z-index: 10000;
 }

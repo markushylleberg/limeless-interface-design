@@ -15,7 +15,19 @@
 <!-- Is user login in? -->
 <?php
 
-    $session = true;
+    session_start();
+
+    if ( $_SESSION ){
+
+        $sjData = file_get_contents('data.json');
+        $jData = json_decode($sjData);
+
+        $id = $_SESSION['id'];
+
+        $session = true;
+    } else {
+        $session = false;
+    }
 
     // adjustments for the navigation for whether or not the user is logged in
 
@@ -23,7 +35,7 @@
     $signOutOrIn = ($session ? '<a href="signout.php">Log out</a>' : '<a href="signup.php">Sign up</a>');
 
     // Show avatar or nah
-    $showAvatar = ($session ? '<a href="profile.php"><img src="src/images/test-martha.jpg" class="round-img small-avatar mx-1"></a>' : '');
+    $showAvatar = ($session ? '<a href="profile.php"><img src="src/images/'.$jData->users->$id->image.'" class="round-img small-avatar mx-1"></a>' : '');
 
     // Adjust the columns in the navigation or nah
     $columnCount = ($session ? 'col-10' : 'col-12');

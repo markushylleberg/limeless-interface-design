@@ -48,9 +48,16 @@ if ( $session == true ){
                     </label>
                 </div>
 
+                <div class="col-12 my-1 text-white">
+                    <label for="image">
+                            <i class="fa fa-camera"></i>Add image
+                    <input type="file" name="image" id="image" class="hidden">
+                    </label>
+                </div>
+
                 <p id="errorMessage" class="my-1 text-danger error-message"></p>
 
-                <div class="text-right my-1">
+                <div class="text-right">
                     <button id="signup" class="btn-primary btn-big">Signup</button>
                 </div>
             </form>

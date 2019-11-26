@@ -22,11 +22,19 @@ class API {
         if ( loginEmail == '' || loginPassword == '' ){
             errorMessage.innerText = 'Please enter a valid email and password';
             errorMessageOpacity.style.opacity = '1';
+        } else {
+
+            $.ajax({
+                url: `apis/api-login.php?email=${loginEmail}&password=${loginPassword}`,
+                method: 'get'
+            }).done( function(response){
+                console.log(response);
+
+                if ( response == 'succes' ) {
+                    window.location.replace('profile.php');
+                }
+            } )
         }
-
-        console.log('Email: '+loginEmail);
-        console.log('Password: '+loginPassword);
-
     }
 
     static signUpRequest(e) {
@@ -46,9 +54,50 @@ class API {
             errorMessage.innerText = 'Please fill out all the fields';
             errorMessageOpacity.style.opacity = '1';
 
+        } else {
+
+            fetch( 'apis/api-sign-up.php', {
+                method: "POST",
+                body: new FormData( document.getElementById('signup'))
+            }).then((responseJson) => {
+                window.location.replace('profile.php');
+              })
+    
         }
 
-        console.log(signupFirstName+' '+signupLastName+' '+signupEmail+' '+signupPassword);
+    }
+
+    static saveProfileEdit(e){
+        e.preventDefault();
+
+        fetch( 'apis/api-edit-profile.php', {
+            method: "POST",
+            body: new FormData( document.getElementById('editProfile'))
+        }).then((responseJson) => {
+            window.location.replace('profile.php');
+          })
+    }
+
+    static newPantry(e){
+
+        e.preventDefault();
+
+        let newPantryName = one('#txtPantryName').value;
+        let newPantryMember = one('#txtPantryMemberMail').value;
+
+        $.ajax({
+            url: `apis/api-create-pantry.php?name=${newPantryName}&member=${newPantryMember}`,
+            method: 'get'
+        }).done( function(response){
+            console.log(response);
+
+            // trigger UI function to close pantry section
+            UI.triggerNewPantrySection();
+        });
+        
+        // clear fields after submit
+            newPantryName = '';
+            newPantryMember = '';
 
     }
 
@@ -69,9 +118,24 @@ class UI {
 
         let recipesContainer = one('#recipes');
         let pantriesContainer = one('#pantries');
+        let newPantryBtn = one('#newPantryBtn').parentElement;
+        let newPantrySection = one('#newPantrySection');
+        let cancelPantryBtn = one('#cancelPantryBtn').parentElement;
+
+        let isRecipesTabActive = one('#recipesTab').classList.contains('active');
 
         recipesContainer.classList.toggle('hidden');
         pantriesContainer.classList.toggle('hidden');
+        newPantryBtn.classList.toggle('hidden');
+
+        if ( isRecipesTabActive ) {
+            
+            newPantryBtn.classList.add('hidden');
+            newPantrySection.classList.add('hidden');
+            cancelPantryBtn.classList.add('hidden');
+
+        }
+
     }
 
     static changeSelection(id, el){
@@ -207,6 +271,48 @@ class UI {
 
     }
 
+    static triggerNewPantrySection(){
+
+        let newPantrySection = one('#newPantrySection');
+        let newPantryBtn = one('#newPantryBtn').parentElement;
+        let cancelPantryBtn = one('#cancelPantryBtn').parentElement;
+
+        newPantrySection.classList.toggle('hidden');
+        newPantryBtn.classList.toggle('hidden');
+        cancelPantryBtn.classList.toggle('hidden');
+
+    }
+
+    static loadMemberImages(id){
+
+        $.ajax({
+            url: 'apis/api-load-member-images.php?id='+id,
+            method: 'get'
+        }).done( function(response) {
+
+            let array = JSON.parse(response);
+
+            let container = one('.members-of-pantry');
+
+            container.innerHTML = '';
+
+
+            array.forEach(element => {
+
+                let div = document.createElement('div');
+                div.classList.toggle('member-image');
+                div.innerHTML = `<img src="src/images/${element}" class="small-avatar round-img sm-col-2">
+                                `;
+
+                container.appendChild(div);
+
+                console.log(element);
+            });
+
+        })
+
+    }
+
 }
 
 
@@ -265,6 +371,26 @@ one('body').addEventListener('click', (e) => {
 
     if ( e.target.id == 'clearAllNotificationsButton' ) {
         UI.clearNotifications();
+    }
+
+    if ( e.target.id == 'newPantryBtn' ) {
+        UI.triggerNewPantrySection();
+    }
+
+    if ( e.target.id == 'cancelPantryBtn' ){
+        UI.triggerNewPantrySection();
+    }
+
+    if ( e.target.id == 'saveEditProfileBtn' ){
+        API.saveProfileEdit(e);
+    }
+
+    if ( e.target.id == 'submitNewPantryBtn' ){
+        API.newPantry(e);
+    }
+
+    if ( (e.target.classList.contains('select-option')) ) {
+        UI.loadMemberImages(e.target.id);
     }
 
 })

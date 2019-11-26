@@ -1,0 +1,65 @@
+{
+    "users": {
+        "5ddd13ab6d7cf": {
+            "id": "5ddd13ab6d7cf",
+            "firstname": "Markus",
+            "lastname": "Hylleberg",
+            "email": "markushylleberg@gmail.com",
+            "password": "pass123",
+            "image": "5ddd1a4fbb7c3",
+            "notifications": {}
+        },
+        "5ddd13ab6d7ce": {
+            "id": "5ddd13ab6d7ce",
+            "firstname": "Markus",
+            "lastname": "Hylleberg",
+            "email": "markushylleberg@gmail.dk",
+            "password": "pass123",
+            "image": "5ddd1a4fbb7c6",
+            "notifications": {}
+        },
+        "5ddd3addf0adf": {
+            "id": "5ddd3addf0adf",
+            "firstname": "Anne",
+            "lastname": "Glad",
+            "email": "anne@glad.dk",
+            "password": "rty456",
+            "image": "5ddd3addf0a04",
+            "notifications": {}
+        },
+        "5ddd4063a7b4e": {
+            "id": "5ddd4063a7b4e",
+            "firstname": "Henriette",
+            "lastname": "Andersen",
+            "email": "henir@anr.dk",
+            "password": "tre432",
+            "image": "5ddd4063a77a8",
+            "notifications": {}
+        }
+    },
+    "pantries": {
+        "5ddd23ef63e2a": {
+            "id": "5ddd23ef63e2a",
+            "name": "My pantry",
+            "members": [
+                "5ddd13ab6d7cf",
+                "5ddd3addf0adf",
+                "5ddd4063a7b4e"
+            ],
+            "ingredients": {}
+        },
+        "5ddd2401e356a": {
+            "id": "5ddd2401e356a",
+            "name": "My office",
+            "members": [
+                "5ddd13ab6d7cf",
+                "5ddd13ab6d7ce",
+                "5ddd3addf0adf",
+                "5ddd4063a7b4e"
+            ],
+            "ingredients": {}
+        }
+    },
+    "ingredients": {},
+    "recipes": {}
+}

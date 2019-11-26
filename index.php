@@ -5,11 +5,11 @@ $pageTitle = 'Home';
 
 require_once('components/header.php');
 
-if ( $session == true ){
+
+if ( $_SESSION ){
     header('Location: profile.php');
     exit;
 }
-
 
 ?>
 
