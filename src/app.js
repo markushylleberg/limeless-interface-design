@@ -101,6 +101,20 @@ class API {
 
     }
 
+    static addItemToList(item){
+
+        let pantry = one('.select-option.active').id;
+        
+        $.ajax({
+            url: `apis/api-add-item-to-pantry.php?pantry=${pantry}&item=${item}`,
+            method: 'get'
+        }).done( function(response){
+            
+            console.log(response);
+
+        });
+    }
+
 }
 
 class UI {
@@ -306,10 +320,127 @@ class UI {
 
                 container.appendChild(div);
 
-                console.log(element);
             });
 
         })
+
+        UI.loadIngredientsFromPantry(id);
+
+    }
+
+    static loadIngredientsFromPantry(id){
+
+        let greenContainer = one('#greenContainer');
+        let meatContainer = one('#meatContainer');
+        let frozenContainer = one('#frozenContainer');
+        let dairyContainer = one('#dairyContainer');
+
+        $.ajax({
+            url: 'apis/api-load-pantry-items.php?id='+id,
+            method: 'get'
+        }).done( function(response) {
+
+            greenContainer.innerHTML = '';
+            meatContainer.innerHTML = '';
+            frozenContainer.innerHTML = '';
+            dairyContainer.innerHTML = '';
+
+            let object = JSON.parse(response);
+
+            for( var key in object ){
+
+            let div = document.createElement('div');
+            div.classList.add('pantry-entry');
+            div.classList.add('row');
+            div.classList.add('align-center');
+            div.innerHTML = `<p class="title sm-col-4 md-col-4 col-4">${object[key]['name']}</p>
+                                    <div class="sm-col-2 md-col-2 col-2 text-right text-right">
+                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div class="sm-col-2 md-col-2 col-2 align-center">
+                                        <p id="qty">${object[key]['quantity']}</p>
+                                    </div>
+                                    <div class="sm-col-2 md-col-2 col-2 text-left">
+                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                    </div>
+                            <div class="sm-col-2 md-col-2 col-2">
+                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                            </div>`;
+
+
+                if ( object[key]['category'] == 'Greens' ){
+
+                    one('#greenContainer').appendChild(div);
+
+                    // console.log('green');
+
+                } else if ( object[key]['category'] == 'Meat' ){
+
+                    one('#meatContainer').appendChild(div);
+
+                    // console.log('meat');                    
+
+                } else if ( object[key]['category'] == 'Frozen' ){
+
+                    one('#frozenContainer').appendChild(div);
+
+                    // console.log('frozen');                    
+
+                } else if ( object[key]['category'] == 'Dairy' ){
+
+                    one('#dairyContainer').appendChild(div);
+
+                    // console.log('dairy');                    
+
+                }
+                // console.log(object[key]['name']);
+                // console.log(object[key]['quantity']);
+                // console.log(object[key]['category']);
+            }
+        })
+        
+    }
+
+    static importSearchSuggestions(){
+
+        let value = one('#addNewItemInput').value;
+
+        if ( value !== '' ){
+            one('#addNewItemBtn').classList.add('hidden');
+
+                $.ajax({
+                    url: 'apis/api-load-items-suggestions.php?value='+value,
+                    method: 'get'
+                }).done( function(response) {
+
+                    let array = JSON.parse(response);
+
+                    let suggestionsPanel = one('#suggestionsPanel');
+
+                    suggestionsPanel.innerHTML = '';
+
+                    array.forEach(element => {
+
+                        let div = document.createElement('div');
+                        div.classList.add('suggestion');
+                        // div.classList.add('py-1');
+                        div.innerHTML = `
+                                        <p onclick="API.addItemToList('${element}')" class="text-primary"><i class="fa fa-plus text-green"></i>
+                                            ${element}
+                                        </p>
+                                        `;
+                        one('#suggestionsPanel').appendChild(div);
+                    })
+
+                    console.log(response);
+                })
+
+        } else {
+            one('#addNewItemBtn').classList.remove('hidden');
+            suggestionsPanel.innerHTML = '';
+        }
+
+
 
     }
 
@@ -391,6 +522,10 @@ one('body').addEventListener('click', (e) => {
 
     if ( (e.target.classList.contains('select-option')) ) {
         UI.loadMemberImages(e.target.id);
+    }
+
+    if ( e.target.id == 'addNewItemBtn' ){
+        API.addNewItemToPantry();
     }
 
 })

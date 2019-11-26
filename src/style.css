@@ -319,7 +319,7 @@ i{
     outline: 0;
     border: 0;
     padding: 10px 32px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     transition: .2s ease;
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
@@ -1332,4 +1332,18 @@ input[type=checkbox]:checked:after {
 .new-pantry-section{
     filter: brightness(1);
     z-index: 10000;
+}
+
+.suggestion{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+    padding: 6px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.315);
+}
+
+.suggestions-panel{
+    max-height: 220px;
+    overflow: hidden;
 }

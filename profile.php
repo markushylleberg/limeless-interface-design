@@ -111,7 +111,7 @@ foreach( $jData->pantries as $pantry ){
             </div>
 
             <div class="row">
-                <div class="selected-field-name sm-col-4 md-col-4 col-2 px-1">
+                <div class="selected-field-name sm-col-4 md-col-4 col-2">
                     <p id="pantrySelected" class="enlarged"><?php echo $firstPantryName ?></p>
                 </div>
                 <div class="members-of-pantry sm-col-4 row">
@@ -311,59 +311,39 @@ foreach( $jData->pantries as $pantry ){
 
                 <div class="separator"></div>
 
-                <div class="pantry-body">
+                <div id="greenContainer" class="pantry-body">
 
-            
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Carrots</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                        <?php
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
+                            foreach( $jData->pantries as $pantry ){
+                                foreach( $pantry->ingredients as $ingredient ){
+                                    if ( $ingredient->category == 'Greens' && $pantry->id == $selectedPantryId  ){
+                                            echo '
+                                            <div class="pantry-entry row align-center">
+                                            <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
+                                                    <div class="sm-col-2 md-col-2 col-2 text-right text-right">
+                                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="sm-col-2 md-col-2 col-2 align-center">
+                                                        <p id="qty">'.$ingredient->quantity.'</p>
+                                                    </div>
+                                                    <div class="sm-col-2 md-col-2 col-2 text-left">
+                                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                    </div>
+                    
+                                            <div class="sm-col-2 md-col-2 col-2">
+                                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                            </div>
+                                        </div>
+                                                ';
+                                        }
+                                }
+                            }
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Potatos</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                                ?>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Ginger</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
-
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
             </article>
 
             <article class="pantry sm-col-12 md-col-6 col-6 m-1">
@@ -378,59 +358,36 @@ foreach( $jData->pantries as $pantry ){
 
                 <div class="separator"></div>
 
-                <div class="pantry-body">
+                <div id="meatContainer" class="pantry-body">
 
-            
-            <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Chicken</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                        <?php
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
-                    </div>
+                        foreach( $jData->pantries as $pantry ){
+                            foreach( $pantry->ingredients as $ingredient ){
+                                if ( $ingredient->category == 'Meat' && $pantry->id == $selectedPantryId ){
+                                        echo '
+                                        <div class="pantry-entry row align-center">
+                                        <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
+                                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
+                                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                                <div class="sm-col-2 md-col-2 col-2 align-center">
+                                                    <p id="qty">'.$ingredient->quantity.'</p>
+                                                </div>
+                                                <div class="sm-col-2 md-col-2 col-2 text-left">
+                                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                </div>
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Salami</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                                        <div class="sm-col-2 md-col-2 col-2">
+                                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                        </div>
+                                    </div>
+                                            ';
+                                    }
+                            }
+                        }
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
-
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Ham</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
-
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
+                        ?>
                     </div>
                 </article>
 
@@ -446,58 +403,38 @@ foreach( $jData->pantries as $pantry ){
 
                 <div class="separator"></div>
 
-                <div class="pantry-body">
+                <div id="frozenContainer" class="pantry-body">
 
-            
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Carrots</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
+                        <?php
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Potatos</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                            foreach( $jData->pantries as $pantry ){
+                                foreach( $pantry->ingredients as $ingredient ){
+                                    if ( $ingredient->category == 'Frozen' && $pantry->id == $selectedPantryId  ){
+                                            echo '
+                                            <div class="pantry-entry row align-center">
+                                            <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
+                                                    <div class="sm-col-2 md-col-2 col-2 text-right text-right">
+                                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="sm-col-2 md-col-2 col-2 align-center">
+                                                        <p id="qty">'.$ingredient->quantity.'</p>
+                                                    </div>
+                                                    <div class="sm-col-2 md-col-2 col-2 text-left">
+                                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                    </div>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
+                                            <div class="sm-col-2 md-col-2 col-2">
+                                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                            </div>
+                                        </div>
+                                                ';
+                                        }
+                                }
+                            }
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Ginger</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                        ?>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
                     </div>
             </article>
 
@@ -514,58 +451,38 @@ foreach( $jData->pantries as $pantry ){
 
                 <div class="separator"></div>
 
-                <div class="pantry-body">
+                <div id="dairyContainer" class="pantry-body">
 
-            
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Carrots</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
+                        <?php
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Potatos</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+                            foreach( $jData->pantries as $pantry ){
+                                foreach( $pantry->ingredients as $ingredient ){
+                                    if ( $ingredient->category == 'Dairy' && $pantry->id == $selectedPantryId  ){
+                                            echo '
+                                            <div class="pantry-entry row align-center">
+                                            <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
+                                                    <div class="sm-col-2 md-col-2 col-2 text-right text-right">
+                                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="sm-col-2 md-col-2 col-2 align-center">
+                                                        <p id="qty">'.$ingredient->quantity.'</p>
+                                                    </div>
+                                                    <div class="sm-col-2 md-col-2 col-2 text-left">
+                                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                    </div>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
-                    </div>
+                                            <div class="sm-col-2 md-col-2 col-2">
+                                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                            </div>
+                                        </div>
+                                                ';
+                                        }
+                                }
+                            }
 
-                    <div class="pantry-entry row align-center">
-                        <p class="title sm-col-4 md-col-4 col-4">Ginger</p>
-                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">2</p>   
-                                </div>
-                                <div class="sm-col-2 md-col-2 col-2 text-left">
-                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
-                                </div>
+?>
 
-                        <div class="sm-col-2 md-col-2 col-2">
-                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
-                        </div>
                     </div>
             </article>
 
@@ -577,14 +494,9 @@ foreach( $jData->pantries as $pantry ){
                         <p>Type in the name of the item and select the correct one from the suggestions list.</p>
                     </div>
                     <div class="add-new-item-section sm-col-12 md-col-6 col-6">
-                        <input type="text" name="txtNewIngredient" placeholder="Add ingredient...">
-                        <button class="btn-warning text-white">Add</button>
-                        <div id="#suggestionsPanel">
-                            <div class="suggestion">
-                                <p></p>
-                                <i></i>
-                            </div>
-                        </div>
+                        <input id="addNewItemInput" type="text" oninput="UI.importSearchSuggestions()" name="txtNewIngredient" placeholder="Add ingredient...">
+                        <button id="addNewItemBtn" class="btn-warning text-white my-1">Add</button>
+                        <div id="suggestionsPanel" class="extra-height suggestions-panel"></div>
                     </div>
                 </div>
             </div>
