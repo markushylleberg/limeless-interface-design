@@ -448,6 +448,7 @@ input[type=checkbox]:checked:after {
     border: 1px solid #ededed94;
     cursor: pointer;
     font-size: 13px;
+    z-index: 1000;
     padding: 4px 12px;
 }
 
@@ -463,6 +464,10 @@ input[type=checkbox]:checked:after {
     cursor: pointer;
 }
 
+.select-field.active{
+    border-bottom: 2px solid #333333;
+}
+
 .select-field-inner :first-child{
     border-top: none!important;
 }
@@ -470,6 +475,7 @@ input[type=checkbox]:checked:after {
 .select-option p{
     pointer-events: none;
     margin-left: 20px;
+    font-size: 70%;
 }
 
 .select-option::before{
@@ -502,8 +508,10 @@ input[type=checkbox]:checked:after {
     transform-origin: top;
     background-color: #333333;
     overflow: hidden;
+    margin-top: -1px;
     position: absolute;
     z-index: 10;
+    border: 1px solid #ededed94;
     transition: .15s ease;
     -webkit-transition: .15s ease;
     -moz-transition: .15s ease;
