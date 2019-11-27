@@ -1,70 +1,31 @@
 {
     "users": {
-        "5ddd13ab6d7cf": {
-            "id": "5ddd13ab6d7cf",
-            "firstname": "Michelle",
-            "lastname": "Hylleberg",
-            "email": "markushylleberg@gmail.com",
-            "password": "pass123",
-            "image": "5ddd91262dc67",
-            "notifications": {}
-        },
-        "5ddd13ab6d7ce": {
-            "id": "5ddd13ab6d7ce",
-            "firstname": "Markus",
-            "lastname": "Hylleberg",
-            "email": "markushylleberg@gmail.dk",
-            "password": "pass123",
-            "image": "5ddd1a4fbb7c6",
-            "notifications": {}
-        },
-        "5ddd3addf0adf": {
-            "id": "5ddd3addf0adf",
+        "5dde76955ac45": {
+            "id": "5dde76955ac45",
             "firstname": "Anne",
             "lastname": "Glad",
             "email": "anne@glad.dk",
-            "password": "rty456",
-            "image": "5ddd3addf0a04",
+            "password": "anne",
+            "image": "5dde76955a732",
             "notifications": {}
         },
-        "5ddd4063a7b4e": {
-            "id": "5ddd4063a7b4e",
-            "firstname": "Henriette",
-            "lastname": "Andersen",
-            "email": "henir@anr.dk",
-            "password": "tre432",
-            "image": "5ddd4063a77a8",
+        "5dde76955ac44": {
+            "id": "5dde76955ac44",
+            "firstname": "Torben",
+            "lastname": "Glad",
+            "email": "torben@glad.dk",
+            "password": "torben",
+            "image": "5dde77328acf8",
             "notifications": {}
         }
     },
     "pantries": {
-        "5ddd23ef63e2a": {
-            "id": "5ddd23ef63e2a",
-            "name": "My pantry",
+        "5dde77120d2a9": {
+            "id": "5dde77120d2a9",
+            "name": "Home",
             "members": [
-                "5ddd13ab6d7cf",
-                "5ddd3addf0adf",
-                "5ddd4063a7b4e"
-            ],
-            "ingredients": {}
-        },
-        "5ddd2401e356a": {
-            "id": "5ddd2401e356a",
-            "name": "My office",
-            "members": [
-                "5ddd13ab6d7cf",
-                "5ddd13ab6d7ce",
-                "5ddd3addf0adf",
-                "5ddd4063a7b4e"
-            ],
-            "ingredients": {}
-        },
-        "5ddd914fa714e": {
-            "id": "5ddd914fa714e",
-            "name": "Flydedokken",
-            "members": [
-                "5ddd13ab6d7cf",
-                "5ddd13ab6d7ce"
+                "5dde76955ac45",
+                "5dde76955ac44"
             ],
             "ingredients": {}
         }
@@ -287,5 +248,266 @@
             "unit": "g"
         }
     },
-    "recipes": {}
+    "recipes": {
+        "recipe1": {
+            "id": "recipe1",
+            "name": "Salad",
+            "time": "30m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "one.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe2": {
+            "id": "recipe2",
+            "name": "Carrot soup",
+            "time": "1h 10m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "two.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe3": {
+            "id": "recipe3",
+            "name": "Salami pizza",
+            "time": "1h 30m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "three.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe4": {
+            "id": "recipe4",
+            "name": "Pasta pesto",
+            "time": "30m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "four.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe5": {
+            "id": "recipe5",
+            "name": "Meatballs",
+            "time": "40m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "five.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe6": {
+            "id": "recipe6",
+            "name": "Salmon",
+            "time": "1h 10m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "six.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe7": {
+            "id": "recipe7",
+            "name": "Pasta Tomato",
+            "time": "30m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "seven.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe8": {
+            "id": "recipe8",
+            "name": "Chicken and spinach",
+            "time": "40m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "eight.jpg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe9": {
+            "id": "recipe9",
+            "name": "Greasy toasts",
+            "time": "45m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "nine.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe10": {
+            "id": "recipe10",
+            "name": "Greens and steak",
+            "time": "1h 10m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "ten.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe11": {
+            "id": "recipe11",
+            "name": "Spicy shrimp",
+            "time": "50m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "eleven.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe12": {
+            "id": "recipe12",
+            "name": "Bacon-wrapped chicken",
+            "time": "40m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "twelve.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe13": {
+            "id": "recipe13",
+            "name": "Avocado and egg toast",
+            "time": "20m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "thirdteen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe14": {
+            "id": "recipe14",
+            "name": "Beans and chicken",
+            "time": "20m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "fourteen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe15": {
+            "id": "recipe15",
+            "name": "Fettuccine with beans",
+            "time": "40m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "fifteen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe16": {
+            "id": "recipe16",
+            "name": "Soya rice",
+            "time": "1h 5m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "sixteen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe17": {
+            "id": "recipe17",
+            "name": "Panini",
+            "time": "35m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "seventeen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe18": {
+            "id": "recipe18",
+            "name": "Toasts with spinach",
+            "time": "35m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "eightteen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe19": {
+            "id": "recipe19",
+            "name": "Pasta with shrimps",
+            "time": "35m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "nineteen.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        },
+        "recipe20": {
+            "id": "recipe20",
+            "name": "Mozzarella with tomatos",
+            "time": "15m",
+            "shortdescription": "Lorem ipsum Lorem ipsum Lorem ipsum",
+            "description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "image": "twenty.jpeg",
+            "ingredients": [
+                "5ddd46941cba9",
+                "5ddd469c78f3e",
+                "5ddd46812c2ff"
+            ]
+        }
+    }
 }

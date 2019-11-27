@@ -289,7 +289,6 @@ i{
     outline: 0;
     border: 0;
     padding: 10px 32px;
-    opacity: .7;
     margin: 10px 0;
     transition: .2s ease;
     -webkit-transition: .2s ease;
@@ -303,13 +302,10 @@ i{
 
 .btn-white:hover{
     background-color: #f5f5f5;
-    opacity: 1;
 }
 
 .btn-white:active{
     background-color: #ffffff;
-    opacity: 1;
-
 }
 
 .btn-warning{
@@ -1101,19 +1097,31 @@ input[type=checkbox]:checked:after {
 
 .recipe-inner{
     border-radius: 8px;
+    background-color: #ededede8;
 }
 
 .recipe .image-wrapper{
     position: relative;
     overflow: hidden;
+    height: 340px!important;
 }
+
+.recipe .image-wrapper img{
+    height: 100%!important;
+    object-fit: cover;
+}
+
 .recipe .image-wrapper .recipe-inner {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    background-color: #ededed;
+}
+
+.single-recipe-section .image-wrapper img{
+    max-height: 400px;
+    object-fit: cover;
 }
 
 /* -----> 4.3) Login / Signup classes */

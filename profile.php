@@ -121,13 +121,15 @@ foreach( $jData->pantries as $pantry ){
                             foreach( $jData->pantries as $pantry ){
 
                                 foreach( $jData->users as $user ){
-
+                                    // if ( in_array($user->id, $pantry->members) ){
+                                    //     echo 'No pantries.';
+                                    //     exit;
+                                    // }
                                     if ( in_array($user->id, $pantry->members) && $pantry->id == $selectedPantryId ){
                                         echo '<div class="member-image">
                                                 <img src="src/images/'.$user->image.'" class="small-avatar round-img sm-col-2">
                                             </div>';
                                     }
-
                                 }
                                };
 
@@ -153,7 +155,7 @@ foreach( $jData->pantries as $pantry ){
                                 <input type="text" name="txtPantryMemberMail" id="txtPantryMemberMail" placeholder="Email of member">
                             </div>
                             <div class="col-4 md-col-4 sm-col-12 align-center">
-                                <button id="submitNewPantryBtn" class="btn-primary">Create</button>
+                                <button id="submitNewPantryBtn" class="btn-warning text-white">Create</button>
                             </div>
                         </form>
                     </div>
@@ -173,6 +175,7 @@ foreach( $jData->pantries as $pantry ){
             $i = 0;
 
             foreach( $jData->pantries as $pantry ){
+
                 if (in_array($id, $pantry->members)){
 
                     if( $i == 0 ){
@@ -184,6 +187,10 @@ foreach( $jData->pantries as $pantry ){
                                 <p>'.$pantry->name.'</p>
                             </div>';
                     }
+
+                } else {
+
+                    echo 'You do not have any pantries yet!';
 
                 };
 
@@ -203,97 +210,44 @@ foreach( $jData->pantries as $pantry ){
         <div id="recipes" class="row md-col-12 col-12 recipes-row">
 
             <!-- Test recipe 1 -->
-            <div class="recipe sm-col-12 md-col-6 col-4">
-                <div class="recipe-image image-wrapper">
-                    <img src="./src/images/test-recipe.jpg" alt="">
-                    <div class="recipe-inner p-2">
-                        <div class="recipe-match">
-                            <p class="explainer text-primary text-center">
-                                You have <b>6/9</b> items
-                            </p>
-                            <div class="align-center row">
-                                <div class="bar col-12">
-                                    <div id="matchBar" class="inner-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="recipe-excerpt">
-                            <div class="recipe-title">
-                                <p class="text-primary">Lamb with baked peber</p>
-                            </div>
-                            <div class="recipe-meta">
-                                <p class="text-primary">2h 20m</p>
-                            </div>
-                            <div class="recipe-text">
-                                <p class="text-secondary">Delicious lambchops with baked bell pebber and ...</p>
-                            </div>
-                        </div>
-                        <button class="read-more-btn btn-white my-1"><a class="text-primary" href="single-recipe.php">Read more</a></button>
-                    </div>
-                </div>
-            </div>
 
-                        <!-- Test recipe 2 -->
-            <div class="recipe sm-col-12 md-col-6 col-4">
-                <div class="recipe-image image-wrapper">
-                    <img src="./src/images/test-recipe.jpg" alt="">
-                    <div class="recipe-inner p-2">
-                        <div class="recipe-match">
-                            <p class="explainer text-primary text-center">
-                                You have <b>4/8</b> items
-                            </p>
-                            <div class="align-center row">
-                                <div class="bar col-12">
-                                    <div id="matchBar" class="inner-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="recipe-excerpt">
-                            <div class="recipe-title">
-                                <p class="text-primary">Lamb with baked peber</p>
-                            </div>
-                            <div class="recipe-meta">
-                                <p class="text-primary">2h 20m</p>
-                            </div>
-                            <div class="recipe-text">
-                                <p class="text-secondary">Delicious lambchops with baked bell pebber and ...</p>
-                            </div>
-                        </div>
-                        <button class="read-more-btn btn-white my-1"><a class="text-primary" href="single-recipe.php">Read more</a></button>
-                    </div>
-                </div>
-            </div>
+            <?php
 
-                        <!-- Test recipe 3 -->
-            <div class="recipe sm-col-12 md-col-6 col-4">
-                <div class="recipe-image image-wrapper">
-                    <img src="./src/images/test-recipe.jpg" alt="">
-                    <div class="recipe-inner p-2">
-                        <div class="recipe-match">
-                            <p class="explainer text-primary text-center">
-                                You have <b>2/10</b> items
-                            </p>
-                            <div class="align-center row">
-                                <div class="bar col-12">
-                                    <div id="matchBar" class="inner-bar"></div>
+                foreach( $jData->recipes as $recipe ){
+
+                    echo '<div class="recipe sm-col-12 md-col-6 col-4">
+                            <div class="recipe-image image-wrapper">
+                                <img src="./src/images/'.$recipe->image.'" alt="">
+                                <div class="recipe-inner p-2">
+                                    <div class="recipe-match">
+                                        <p class="explainer text-primary text-center">
+                                            You have <b>2/'.count($recipe->ingredients).'</b> items
+                                        </p>
+                                        <div class="align-center row">
+                                            <div class="bar col-12">
+                                                <div id="matchBar" class="inner-bar" style="width:50%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-excerpt">
+                                        <div class="recipe-title">
+                                            <p class="text-primary">'.$recipe->name.'</p>
+                                        </div>
+                                        <div class="recipe-meta">
+                                            <p class="text-primary">'.$recipe->time.'</p>
+                                        </div>
+                                        <div class="recipe-text">
+                                            <p class="text-secondary">'.$recipe->shortdescription.'</p>
+                                        </div>
+                                    </div>
+                                    <button class="read-more-btn btn-white my-1"><a class="text-primary" href="single-recipe.php?id='.$recipe->id.'">Read more</a></button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="recipe-excerpt">
-                            <div class="recipe-title">
-                                <p class="text-primary">Lamb with baked peber</p>
-                            </div>
-                            <div class="recipe-meta">
-                                <p class="text-primary">2h 20m</p>
-                            </div>
-                            <div class="recipe-text">
-                                <p class="text-secondary">Delicious lambchops with baked bell pebber and ...</p>
-                            </div>
-                        </div>
-                        <button class="read-more-btn btn-white my-1"><a class="text-primary" href="single-recipe.php">Read more</a></button>
-                    </div>
-                </div>
-            </div>
+                        </div>';
+
+                }
+
+            ?>
 
         </div>
 
@@ -493,7 +447,7 @@ foreach( $jData->pantries as $pantry ){
                         <p class="enlarged"><i class="fa fa-plus text-white"></i>Add new item to pantry</p>
                         <p>Type in the name of the item and select the correct one from the suggestions list.</p>
                     </div>
-                    <div class="add-new-item-section sm-col-12 md-col-6 col-6">
+                    <div class="add-new-item-section sm-col-12 md-col-6 col-6 extra-height">
                         <input id="addNewItemInput" type="text" oninput="UI.importSearchSuggestions()" name="txtNewIngredient" placeholder="Add ingredient...">
                         <button id="addNewItemBtn" class="btn-warning text-white my-1">Add</button>
                         <div id="suggestionsPanel" class="extra-height suggestions-panel"></div>
