@@ -109,10 +109,51 @@ class API {
             url: `apis/api-add-item-to-pantry.php?pantry=${pantry}&item=${item}`,
             method: 'get'
         }).done( function(response){
-            
-            console.log(response);
+
+            let array = JSON.parse(response);
+
+            const name = array['name'];
+            const category = array['category'];
+            const quantity = array['quantity'];
+
+            let searchInput = one('#addNewItemInput');
+            let suggestionsPanel = one('#suggestionsPanel');
+
+            searchInput.value = '';
+            suggestionsPanel.innerHTML = '';
+
+            one('#addNewItemBtn').classList.remove('hidden');
+
+            UI.addItemToListUI(name, category, quantity);
 
         });
+    }
+
+    static changeValue(item, action){
+
+        let e = event;
+
+        let number = e.target.parentElement.parentElement.children[2].firstElementChild;
+        let parent = e.target.parentElement.parentElement;
+
+        let pantry = one('.select-option.active').id;
+
+        $.ajax({
+            url: `apis/api-change-item-value.php?item=${item}&action=${action}&id=${pantry}`,
+            method: 'get'
+        }).done( function(response){
+            // console.log(response);
+
+            if ( action == 'increase' ){
+                number.innerHTML = response;
+            } else if ( action == 'decrease' ){
+                number.innerHTML = response;
+            } else if ( action == 'delete' ){
+                parent.innerHTML = '';
+            }
+    
+        })
+
     }
 
 }
@@ -355,16 +396,16 @@ class UI {
             div.classList.add('align-center');
             div.innerHTML = `<p class="title sm-col-4 md-col-4 col-4">${object[key]['name']}</p>
                                     <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                        <button onclick="API.changeValue('${object[key]['name']}', 'increase')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                     </div>
                                     <div class="sm-col-2 md-col-2 col-2 align-center">
                                         <p id="qty">${object[key]['quantity']}</p>
                                     </div>
                                     <div class="sm-col-2 md-col-2 col-2 text-left">
-                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                        <button onclick="API.changeValue('${object[key]['name']}', 'decrease')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                     </div>
                             <div class="sm-col-2 md-col-2 col-2">
-                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                <p onclick="API.changeValue('${object[key]['name']}', 'delete')" class="pointer delete-btn text-danger underline bold">Delete</p>
                             </div>`;
 
 
@@ -441,6 +482,46 @@ class UI {
         }
 
 
+
+    }
+
+    static addItemToListUI(item, category, quantity){
+
+        let div = document.createElement('div');
+        div.classList.add('pantry-entry');
+        div.classList.add('row');
+        div.classList.add('align-center');
+        div.innerHTML = `<p class="title sm-col-4 md-col-4 col-4">${item}</p>
+                                <div class="sm-col-2 md-col-2 col-2 text-right text-right">
+                                    <button onclick="API.changeValue('${item}', 'increase')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
+                                </div>
+                                <div class="sm-col-2 md-col-2 col-2 align-center">
+                                    <p id="qty">1${quantity}</p>
+                                </div>
+                                <div class="sm-col-2 md-col-2 col-2 text-left">
+                                    <button onclick="API.changeValue('${item}', 'decrease')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
+                                </div>
+                        <div class="sm-col-2 md-col-2 col-2">
+                            <p onclick="API.changeValue('${item}', 'delete')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                        </div>`;
+
+        if ( category == 'Greens' ) {
+
+            one('#greenContainer').appendChild(div);
+        
+        } else if ( category == 'Meat' ){
+        
+            one('#meatContainer').appendChild(div);                 
+        
+        } else if ( category == 'Frozen' ){
+        
+            one('#frozenContainer').appendChild(div);              
+        
+        } else if ( category == 'Dairy' ){
+        
+            one('#dairyContainer').appendChild(div);                 
+        
+        }
 
     }
 

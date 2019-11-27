@@ -322,17 +322,17 @@ foreach( $jData->pantries as $pantry ){
                                             <div class="pantry-entry row align-center">
                                             <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
                                                     <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                        <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 align-center">
                                                         <p id="qty">'.$ingredient->quantity.'</p>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 text-left">
-                                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                        <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                                     </div>
                     
                                             <div class="sm-col-2 md-col-2 col-2">
-                                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
                                             </div>
                                         </div>
                                                 ';
@@ -369,17 +369,17 @@ foreach( $jData->pantries as $pantry ){
                                         <div class="pantry-entry row align-center">
                                         <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
                                                 <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                                    <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                    <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                 </div>
                                                 <div class="sm-col-2 md-col-2 col-2 align-center">
                                                     <p id="qty">'.$ingredient->quantity.'</p>
                                                 </div>
                                                 <div class="sm-col-2 md-col-2 col-2 text-left">
-                                                    <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                    <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                                 </div>
 
                                         <div class="sm-col-2 md-col-2 col-2">
-                                            <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                            <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
                                         </div>
                                     </div>
                                             ';
@@ -415,17 +415,17 @@ foreach( $jData->pantries as $pantry ){
                                             <div class="pantry-entry row align-center">
                                             <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
                                                     <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                        <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 align-center">
                                                         <p id="qty">'.$ingredient->quantity.'</p>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 text-left">
-                                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                        <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                                     </div>
 
                                             <div class="sm-col-2 md-col-2 col-2">
-                                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
                                             </div>
                                         </div>
                                                 ';
@@ -463,17 +463,17 @@ foreach( $jData->pantries as $pantry ){
                                             <div class="pantry-entry row align-center">
                                             <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
                                                     <div class="sm-col-2 md-col-2 col-2 text-right text-right">
-                                                        <button class="btn-secondary btn-small"><i class="fa fa-plus"></i></button>
+                                                        <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 align-center">
                                                         <p id="qty">'.$ingredient->quantity.'</p>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 text-left">
-                                                        <button class="btn-secondary btn-small"><i class="fa fa-minus"></i></button>
+                                                        <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                                     </div>
 
                                             <div class="sm-col-2 md-col-2 col-2">
-                                                <p class="pointer delete-btn text-danger underline bold">Delete</p>
+                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
                                             </div>
                                         </div>
                                                 ';

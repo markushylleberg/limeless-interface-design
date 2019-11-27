@@ -25,8 +25,10 @@
 
             $jData->pantries->$pantry->ingredients->$ingredientID = $newIngredient;
 
+            echo '{"name":"'.$ingredient->name.'","category":"'.$ingredient->category.'","quantity":"'.$ingredient->unit.'"}';
         }
-
+        
+        
     }
 
     $sjData = json_encode($jData, JSON_PRETTY_PRINT);
