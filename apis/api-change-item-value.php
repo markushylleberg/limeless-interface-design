@@ -27,26 +27,25 @@
             if ( $ingredientUnit == 'kg' ){
 
                 $newValue = $currentValue + 0.5;
-
+                echo $newValue.$ingredientUnit;
 
             } else if ( $ingredientUnit == 'entity' ) {
 
                 $newValue = $currentValue + 1;
-
+                echo $newValue;
 
             } else if ( $ingredientUnit == 'g' ) {
 
                 $newValue = $currentValue + 100;
-
+                echo $newValue.$ingredientUnit;
 
             } else if ( $ingredientUnit == 'liter' ) {
 
                 $newValue = $currentValue + 1;
-
+                echo $newValue.$ingredientUnit;
             }
 
             $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
-            echo $newValue.$ingredientUnit;
 
 
         } else if ( $action == 'decrease' ) {
@@ -54,26 +53,29 @@
             if ( $ingredientUnit == 'kg' ){
 
                 $newValue = $currentValue - 0.5;
+                echo $newValue.$ingredientUnit;
 
 
             } else if ( $ingredientUnit == 'entity' ) {
 
                 $newValue = $currentValue - 1;
+                echo $newValue;
 
 
             } else if ( $ingredientUnit == 'g' ) {
 
                 $newValue = $currentValue - 100;
+                echo $newValue.$ingredientUnit;
 
 
             } else if ( $ingredientUnit == 'liter' ) {
 
                 $newValue = $currentValue - 1;
+                echo $newValue.$ingredientUnit;
 
             }
 
             $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
-            echo $newValue.$ingredientUnit;
 
         } else if ( $action == 'delete' ) {
 

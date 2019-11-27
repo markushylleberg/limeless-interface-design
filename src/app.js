@@ -487,6 +487,8 @@ class UI {
 
     static addItemToListUI(item, category, quantity){
 
+        let isEntity = (quantity == 'entity' ? '' : quantity);
+
         let div = document.createElement('div');
         div.classList.add('pantry-entry');
         div.classList.add('row');
@@ -496,7 +498,7 @@ class UI {
                                     <button onclick="API.changeValue('${item}', 'increase')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                 </div>
                                 <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">1${quantity}</p>
+                                    <p id="qty">1${isEntity}</p>
                                 </div>
                                 <div class="sm-col-2 md-col-2 col-2 text-left">
                                     <button onclick="API.changeValue('${item}', 'decrease')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>

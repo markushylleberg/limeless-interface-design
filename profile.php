@@ -112,7 +112,7 @@ foreach( $jData->pantries as $pantry ){
 
             <div class="row">
                 <div class="selected-field-name sm-col-4 md-col-4 col-2">
-                    <p id="pantrySelected" class="enlarged"><?php echo $firstPantryName ?></p>
+                    <p id="pantrySelected" class="bold pantry-selected"><?php echo $firstPantryName ?></p>
                 </div>
                 <div class="members-of-pantry sm-col-4 row">
 
@@ -188,14 +188,10 @@ foreach( $jData->pantries as $pantry ){
                             </div>';
                     }
 
-                } else {
-
-                    echo 'You do not have any pantries yet!';
-
-                };
-
-                $i++;
+                    $i++;
+                }
             }
+
             ?>
                 </div>
              </div>
@@ -272,6 +268,11 @@ foreach( $jData->pantries as $pantry ){
                             foreach( $jData->pantries as $pantry ){
                                 foreach( $pantry->ingredients as $ingredient ){
                                     if ( $ingredient->category == 'Greens' && $pantry->id == $selectedPantryId  ){
+
+                                        $entity = $ingredient->quantity;
+
+                                        $isEntity = ( strpos($entity, 'entity') ? preg_replace('/[^0-9.]+/', '', $ingredient->quantity) : $ingredient->quantity );
+
                                             echo '
                                             <div class="pantry-entry row align-center">
                                             <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
@@ -279,7 +280,7 @@ foreach( $jData->pantries as $pantry ){
                                                         <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 align-center">
-                                                        <p id="qty">'.$ingredient->quantity.'</p>
+                                                        <p id="qty">'.$isEntity.'</p>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 text-left">
                                                         <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
@@ -319,6 +320,11 @@ foreach( $jData->pantries as $pantry ){
                         foreach( $jData->pantries as $pantry ){
                             foreach( $pantry->ingredients as $ingredient ){
                                 if ( $ingredient->category == 'Meat' && $pantry->id == $selectedPantryId ){
+
+                                    $entity = $ingredient->quantity;
+
+                                    $isEntity = ( strpos($entity, 'entity') ? preg_replace('/[^0-9.]+/', '', $ingredient->quantity) : $ingredient->quantity );
+
                                         echo '
                                         <div class="pantry-entry row align-center">
                                         <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
@@ -326,7 +332,7 @@ foreach( $jData->pantries as $pantry ){
                                                     <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                 </div>
                                                 <div class="sm-col-2 md-col-2 col-2 align-center">
-                                                    <p id="qty">'.$ingredient->quantity.'</p>
+                                                    <p id="qty">'.$isEntity.'</p>
                                                 </div>
                                                 <div class="sm-col-2 md-col-2 col-2 text-left">
                                                     <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
@@ -365,6 +371,11 @@ foreach( $jData->pantries as $pantry ){
                             foreach( $jData->pantries as $pantry ){
                                 foreach( $pantry->ingredients as $ingredient ){
                                     if ( $ingredient->category == 'Frozen' && $pantry->id == $selectedPantryId  ){
+
+                                        $entity = $ingredient->quantity;
+
+                                        $isEntity = ( strpos($entity, 'entity') ? preg_replace('/[^0-9.]+/', '', $ingredient->quantity) : $ingredient->quantity );    
+
                                             echo '
                                             <div class="pantry-entry row align-center">
                                             <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
@@ -372,7 +383,7 @@ foreach( $jData->pantries as $pantry ){
                                                         <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 align-center">
-                                                        <p id="qty">'.$ingredient->quantity.'</p>
+                                                        <p id="qty">'.$isEntity.'</p>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 text-left">
                                                         <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
@@ -413,6 +424,11 @@ foreach( $jData->pantries as $pantry ){
                             foreach( $jData->pantries as $pantry ){
                                 foreach( $pantry->ingredients as $ingredient ){
                                     if ( $ingredient->category == 'Dairy' && $pantry->id == $selectedPantryId  ){
+
+                                        $entity = $ingredient->quantity;
+
+                                        $isEntity = ( strpos($entity, 'entity') ? preg_replace('/[^0-9.]+/', '', $ingredient->quantity) : $ingredient->quantity );    
+
                                             echo '
                                             <div class="pantry-entry row align-center">
                                             <p class="title sm-col-4 md-col-4 col-4">'.$ingredient->name.'</p>
@@ -420,7 +436,7 @@ foreach( $jData->pantries as $pantry ){
                                                         <button onclick="API.changeValue(\''.$ingredient->name.'\', \'increase\')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 align-center">
-                                                        <p id="qty">'.$ingredient->quantity.'</p>
+                                                        <p id="qty">'.$isEntity.'</p>
                                                     </div>
                                                     <div class="sm-col-2 md-col-2 col-2 text-left">
                                                         <button onclick="API.changeValue(\''.$ingredient->name.'\', \'decrease\')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>

@@ -1,33 +1,676 @@
 {
     "users": {
-        "5dde76955ac45": {
-            "id": "5dde76955ac45",
-            "firstname": "Anne",
-            "lastname": "Glad",
-            "email": "anne@glad.dk",
-            "password": "anne",
-            "image": "5dde76955a732",
+        "5dde935cee270": {
+            "id": "5dde935cee270",
+            "firstname": "August",
+            "lastname": "Jensen",
+            "email": "august@jensen.dk",
+            "password": "august",
+            "image": "5dde935cee0a9",
             "notifications": {}
         },
-        "5dde76955ac44": {
-            "id": "5dde76955ac44",
-            "firstname": "Torben",
-            "lastname": "Glad",
-            "email": "torben@glad.dk",
-            "password": "torben",
-            "image": "5dde77328acf8",
+        "5dde937677fc1": {
+            "id": "5dde937677fc1",
+            "firstname": "Anni",
+            "lastname": "Hansen",
+            "email": "anni@hansen",
+            "password": "anni",
+            "image": "5dde937677d69",
+            "notifications": {}
+        },
+        "5dde939b289b5": {
+            "id": "5dde939b289b5",
+            "firstname": "Henriette",
+            "lastname": "Henningsen",
+            "email": "henriette@henningsen.dk",
+            "password": "henriette",
+            "image": "5dde939b2870d",
+            "notifications": {}
+        },
+        "5dde93aed1587": {
+            "id": "5dde93aed1587",
+            "firstname": "Sanne",
+            "lastname": "Jensen",
+            "email": "sanne@jensen",
+            "password": "sanne",
+            "image": "5dde93aed1332",
+            "notifications": {}
+        },
+        "5dde93c392e7b": {
+            "id": "5dde93c392e7b",
+            "firstname": "Mark",
+            "lastname": "Hansen",
+            "email": "mark@hansen",
+            "password": "mark",
+            "image": "5dde93c392c36",
+            "notifications": {}
+        },
+        "5dde93ee0d541": {
+            "id": "5dde93ee0d541",
+            "firstname": "Annica",
+            "lastname": "Poulsen",
+            "email": "annica@poulsen.dk",
+            "password": "annica",
+            "image": "5dde93ee0d11a",
+            "notifications": {}
+        },
+        "5dde94097a4c2": {
+            "id": "5dde94097a4c2",
+            "firstname": "Jakob",
+            "lastname": "Olesen",
+            "email": "jakob@olesen.dk",
+            "password": "jakob",
+            "image": "5dde94097a2d0",
+            "notifications": {}
+        },
+        "5dde94299b945": {
+            "id": "5dde94299b945",
+            "firstname": "Sus",
+            "lastname": "Nielsen",
+            "email": "sus@nielsen.dk",
+            "password": "sus",
+            "image": "5dde94299b5c7",
+            "notifications": {}
+        },
+        "5dde9450affab": {
+            "id": "5dde9450affab",
+            "firstname": "Anders",
+            "lastname": "Andreasen",
+            "email": "anders@andreasen",
+            "password": "anders",
+            "image": "5dde9450afd7e",
+            "notifications": {}
+        },
+        "5dde947b7e228": {
+            "id": "5dde947b7e228",
+            "firstname": "Signe",
+            "lastname": "Hansen",
+            "email": "signe@hansen.dk",
+            "password": "signe",
+            "image": "5dde947b7d890",
             "notifications": {}
         }
     },
     "pantries": {
-        "5dde77120d2a9": {
-            "id": "5dde77120d2a9",
-            "name": "Home",
+        "5dde935cee27f": {
+            "id": "5dde935cee27f",
+            "name": "August's pantry",
             "members": [
-                "5dde76955ac45",
-                "5dde76955ac44"
+                "5dde935cee270"
             ],
-            "ingredients": {}
+            "ingredients": {
+                "5ddd44b4b9da1": {
+                    "name": "Potatos",
+                    "category": "Greens",
+                    "quantity": "2kg"
+                },
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Spinach",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd469c78f3e": {
+                    "name": "Butter",
+                    "category": "Dairy",
+                    "quantity": "1g"
+                },
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd45bc72dbb": {
+                    "name": "Pork",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd4581e37b5": {
+                    "name": "Salami",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
+        },
+        "5dde937677ff9": {
+            "id": "5dde937677ff9",
+            "name": "Anni's pantry",
+            "members": [
+                "5dde937677fc1"
+            ],
+            "ingredients": {
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd44b4b9da1": {
+                    "name": "Potatos",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd4652bd40f": {
+                    "name": "Strawberries",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd460658de1": {
+                    "name": "Blueberries",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd45f205ad0": {
+                    "name": "Raspberries",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                }
+            }
+        },
+        "5dde939b289e6": {
+            "id": "5dde939b289e6",
+            "name": "Henriette's pantry",
+            "members": [
+                "5dde939b289b5"
+            ],
+            "ingredients": {
+                "5ddd44b4b9da1": {
+                    "name": "Potatos",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd463672aca": {
+                    "name": "Garlic bread",
+                    "category": "Frozen",
+                    "quantity": 1
+                },
+                "5ddd445d2ad79": {
+                    "name": "Carrots",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd44fea929e": {
+                    "name": "Pumpkin",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd45879d303": {
+                    "name": "Chicken",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd45bc72dbb": {
+                    "name": "Pork",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
+        },
+        "5dde93aed15b6": {
+            "id": "5dde93aed15b6",
+            "name": "Sanne's pantry",
+            "members": [
+                "5dde93aed1587"
+            ],
+            "ingredients": {
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd445d2ad79": {
+                    "name": "Carrots",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd44b4b9da1": {
+                    "name": "Potatos",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd44aff31ce": {
+                    "name": "Ginger",
+                    "category": "Greens",
+                    "quantity": "1g"
+                },
+                "5ddd45274162a": {
+                    "name": "Mushrooms",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd458a1f9ba": {
+                    "name": "Beef",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd459e19fb1": {
+                    "name": "Bacon",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
+        },
+        "5dde93c392eb6": {
+            "id": "5dde93c392eb6",
+            "name": "Mark's pantry",
+            "members": [
+                "5dde93c392e7b"
+            ],
+            "ingredients": {
+                "5ddd46941cba9": {
+                    "name": "Mozzarella",
+                    "category": "Dairy",
+                    "quantity": "3kg"
+                },
+                "5ddd445d2ad79": {
+                    "name": "Carrots",
+                    "category": "Greens",
+                    "quantity": "3.5kg"
+                },
+                "5ddd4652bd40f": {
+                    "name": "Strawberries",
+                    "category": "Frozen",
+                    "quantity": "3.5kg"
+                },
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": "7entity"
+                },
+                "5ddd467d65cd6": {
+                    "name": "Yogurt",
+                    "category": "Dairy",
+                    "quantity": "4liter"
+                },
+                "5ddd463672aca": {
+                    "name": "Garlic bread",
+                    "category": "Frozen",
+                    "quantity": "4entity"
+                },
+                "5ddd461197995": {
+                    "name": "Pizza",
+                    "category": "Frozen",
+                    "quantity": "3entity"
+                },
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": "1entity"
+                }
+            }
+        },
+        "5dde93ee0d572": {
+            "id": "5dde93ee0d572",
+            "name": "Annica's pantry",
+            "members": [
+                "5dde93ee0d541"
+            ],
+            "ingredients": {
+                "5ddd45bc72dbb": {
+                    "name": "Pork",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd4516c7838": {
+                    "name": "Asparagus",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd451ec96af": {
+                    "name": "Eggplant",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd44cecf31b": {
+                    "name": "Orange",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd44cb3788b": {
+                    "name": "Garlic",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd463672aca": {
+                    "name": "Garlic bread",
+                    "category": "Frozen",
+                    "quantity": 1
+                },
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                }
+            }
+        },
+        "5dde94097a4ca": {
+            "id": "5dde94097a4ca",
+            "name": "Jakob's pantry",
+            "members": [
+                "5dde94097a4c2"
+            ],
+            "ingredients": {
+                "5ddd463672aca": {
+                    "name": "Garlic bread",
+                    "category": "Frozen",
+                    "quantity": 1
+                },
+                "5ddd445d2ad79": {
+                    "name": "Carrots",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd44f738eec": {
+                    "name": "Tomatos",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd45274162a": {
+                    "name": "Mushrooms",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd467d65cd6": {
+                    "name": "Yogurt",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd4584efa22": {
+                    "name": "Ham",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd459a44186": {
+                    "name": "Parma ham",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
+        },
+        "5dde94299b982": {
+            "id": "5dde94299b982",
+            "name": "Sus's pantry",
+            "members": [
+                "5dde94299b945"
+            ],
+            "ingredients": {
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Spinach",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd4516c7838": {
+                    "name": "Asparagus",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd451ec96af": {
+                    "name": "Eggplant",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd4584efa22": {
+                    "name": "Ham",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
+        },
+        "5dde9450affb3": {
+            "id": "5dde9450affb3",
+            "name": "Anders's pantry",
+            "members": [
+                "5dde9450affab"
+            ],
+            "ingredients": {
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd44b4b9da1": {
+                    "name": "Potatos",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd467d65cd6": {
+                    "name": "Yogurt",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd458a1f9ba": {
+                    "name": "Beef",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd459e19fb1": {
+                    "name": "Bacon",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Spinach",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd461197995": {
+                    "name": "Pizza",
+                    "category": "Frozen",
+                    "quantity": "2entity"
+                }
+            }
+        },
+        "5dde947b7e279": {
+            "id": "5dde947b7e279",
+            "name": "Signe's pantry",
+            "members": [
+                "5dde947b7e228"
+            ],
+            "ingredients": {
+                "5ddd44cb3788b": {
+                    "name": "Garlic",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd463672aca": {
+                    "name": "Garlic bread",
+                    "category": "Frozen",
+                    "quantity": 1
+                },
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd44f738eec": {
+                    "name": "Tomatos",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd4581e37b5": {
+                    "name": "Salami",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd45c443332": {
+                    "name": "Salmon",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
+        },
+        "5dde9a2f82c85": {
+            "id": "5dde9a2f82c85",
+            "name": "Office",
+            "members": [
+                "5dde935cee270",
+                "5dde937677fc1",
+                "5dde939b289b5",
+                "5dde93ee0d541",
+                "5dde93c392e7b"
+            ],
+            "ingredients": {
+                "5ddd45ff1d4b9": {
+                    "name": "Spinach",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd451ec96af": {
+                    "name": "Eggplant",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd4516c7838": {
+                    "name": "Asparagus",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd453067235": {
+                    "name": "Peas",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd44e9e4c31": {
+                    "name": "Corn",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": 1
+                }
+            }
+        },
+        "5dde9acbe5e2b": {
+            "id": "5dde9acbe5e2b",
+            "name": "Lover <3",
+            "members": [
+                "5dde937677fc1",
+                "5dde9450affab"
+            ],
+            "ingredients": {
+                "5ddd461197995": {
+                    "name": "Pizza",
+                    "category": "Frozen",
+                    "quantity": "3entity"
+                },
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": 1
+                }
+            }
+        },
+        "5dde9cc9841af": {
+            "id": "5dde9cc9841af",
+            "name": "Appartment",
+            "members": [
+                "5dde94299b945",
+                "5dde947b7e228",
+                "5dde93ee0d541",
+                "5dde93aed1587"
+            ],
+            "ingredients": {
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd44bfcaecf": {
+                    "name": "Iceberg",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd44aff31ce": {
+                    "name": "Ginger",
+                    "category": "Greens",
+                    "quantity": "1g"
+                },
+                "5ddd459a44186": {
+                    "name": "Parma ham",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd45274162a": {
+                    "name": "Mushrooms",
+                    "category": "Greens",
+                    "quantity": "1kg"
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Spinach",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd4652bd40f": {
+                    "name": "Strawberries",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                }
+            }
+        },
+        "5dde9d5d24bbf": {
+            "id": "5dde9d5d24bbf",
+            "name": "Boys office",
+            "members": [
+                "5dde9450affab",
+                "5dde94097a4c2"
+            ],
+            "ingredients": {
+                "5ddd461197995": {
+                    "name": "Pizza",
+                    "category": "Frozen",
+                    "quantity": 1
+                },
+                "5ddd459e19fb1": {
+                    "name": "Bacon",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd45bc72dbb": {
+                    "name": "Pork",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd4581e37b5": {
+                    "name": "Salami",
+                    "category": "Meat",
+                    "quantity": "1g"
+                }
+            }
         }
     },
     "ingredients": {

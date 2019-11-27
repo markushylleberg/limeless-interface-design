@@ -439,7 +439,7 @@ input[type=checkbox]:checked:after {
 }
 
 .select-field{
-    width: 120px;
+    width: 140px;
     height: auto;
     position: relative;
     display: flex;
@@ -449,6 +449,14 @@ input[type=checkbox]:checked:after {
     cursor: pointer;
     font-size: 13px;
     padding: 4px 12px;
+}
+
+.select-field p{
+    font-size: 90%;
+}
+
+.pantry-selected{
+    font-size: 100%!important;
 }
 
 .select-option{
