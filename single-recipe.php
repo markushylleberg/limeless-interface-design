@@ -51,13 +51,13 @@ $jData = json_decode($sjData);
                 <p>Ingredient 75</p>
             </div>
             <div class="ingredients-missing col-6 md-col-6 sm-col-12 py-1 text-center">
-                <p class="enlarged my-1">You are missing</p>
-                <p class="opacity-overlay">Ingredient 1</p>
+                <p class="enlarged my-1">You are missing 3 items</p>
+                <p class="opacity-overlay"><i class="fa fa-check"></i>Ingredient 1</p>
                 <p class="text-danger"><i class="fa fa-minus"></i>Ingredient 5</p>
-                <p class="opacity-overlay">Ingredient 8</p>
+                <p class="opacity-overlay"><i class="fa fa-check"></i>Ingredient 8</p>
                 <p class="text-danger"><i class="fa fa-minus"></i>Ingredient 9</p>
-                <p class="opacity-overlay">Ingredient 11</p>
-                <p class="opacity-overlay">Ingredient 53</p>
+                <p class="opacity-overlay"><i class="fa fa-check"></i>Ingredient 11</p>
+                <p class="opacity-overlay"><i class="fa fa-check"></i>Ingredient 53</p>
                 <p class="text-danger"><i class="fa fa-minus"></i>Ingredient 75</p>
             </div>
         </div>

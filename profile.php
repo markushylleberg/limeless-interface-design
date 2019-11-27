@@ -249,10 +249,10 @@ foreach( $jData->pantries as $pantry ){
 
         <div id="pantries" class="row hidden">
 
-            <article class="pantry sm-col-12 md-col-6 col-6 m-1">
+            <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i>Greens</i></p>
+                        <p class="explainer bold"><i class="fa fa-asterisk text-lime"></i>Greens</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -301,10 +301,10 @@ foreach( $jData->pantries as $pantry ){
 
             </article>
 
-            <article class="pantry sm-col-12 md-col-6 col-6 m-1">
+            <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i>Meat</i></p>
+                        <p class="explainer bold"><i class="fa fa-asterisk text-danger"></i>Meat</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -351,10 +351,10 @@ foreach( $jData->pantries as $pantry ){
                     </div>
                 </article>
 
-            <article class="pantry sm-col-12 md-col-6 col-6 m-1">
+            <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i>Frozen</i></p>
+                        <p class="explainer bold"><i class="fa fa-asterisk text-info"></i>Frozen</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -404,10 +404,10 @@ foreach( $jData->pantries as $pantry ){
             </article>
 
 
-            <article class="pantry sm-col-12 md-col-6 col-6 m-1">
+            <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i>Dairy</i></p>
+                        <p class="explainer bold"><i class="fa fa-asterisk text-white"></i>Dairy</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
