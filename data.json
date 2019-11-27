@@ -89,6 +89,15 @@
             "password": "signe",
             "image": "5dde947b7d890",
             "notifications": {}
+        },
+        "5dded4269c202": {
+            "id": "5dded4269c202",
+            "firstname": "Markus",
+            "lastname": "Hylleberg",
+            "email": "markushylleberg@gmail.com",
+            "password": "markus",
+            "image": "5dded4269b73c",
+            "notifications": {}
         }
     },
     "pantries": {
@@ -107,10 +116,10 @@
                 "5ddd44aa9eb62": {
                     "name": "Cucumbers",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 4
                 },
                 "5ddd45ff1d4b9": {
-                    "name": "Spinach",
+                    "name": "Frozen spinach",
                     "category": "Frozen",
                     "quantity": "1kg"
                 },
@@ -362,7 +371,27 @@
                 "5ddd4684efaf4": {
                     "name": "Milk",
                     "category": "Dairy",
-                    "quantity": "1liter"
+                    "quantity": "2.5liter"
+                },
+                "5ddd459a44186": {
+                    "name": "Parma ham",
+                    "category": "Meat",
+                    "quantity": "1g"
+                },
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5dded0d1a64fa": {
+                    "name": "Quiche",
+                    "category": "Dairy",
+                    "quantity": "101g"
+                },
+                "5ddecef1828ac": {
+                    "name": "Thai box",
+                    "category": "Frozen",
+                    "quantity": 1
                 }
             }
         },
@@ -420,12 +449,7 @@
                 "5ddd4684efaf4": {
                     "name": "Milk",
                     "category": "Dairy",
-                    "quantity": "1liter"
-                },
-                "5ddd45ff1d4b9": {
-                    "name": "Spinach",
-                    "category": "Frozen",
-                    "quantity": "1kg"
+                    "quantity": "0.5 liter"
                 },
                 "5ddd4516c7838": {
                     "name": "Asparagus",
@@ -441,6 +465,16 @@
                     "name": "Ham",
                     "category": "Meat",
                     "quantity": "1g"
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Frozen spinach",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1.5 liter"
                 }
             }
         },
@@ -475,11 +509,6 @@
                     "name": "Bacon",
                     "category": "Meat",
                     "quantity": "1g"
-                },
-                "5ddd45ff1d4b9": {
-                    "name": "Spinach",
-                    "category": "Frozen",
-                    "quantity": "1kg"
                 },
                 "5ddd461197995": {
                     "name": "Pizza",
@@ -540,18 +569,14 @@
                 "5dde937677fc1",
                 "5dde939b289b5",
                 "5dde93ee0d541",
-                "5dde93c392e7b"
+                "5dde93c392e7b",
+                "5dded4269c202"
             ],
             "ingredients": {
-                "5ddd45ff1d4b9": {
-                    "name": "Spinach",
-                    "category": "Frozen",
-                    "quantity": "1kg"
-                },
                 "5ddd4684efaf4": {
                     "name": "Milk",
                     "category": "Dairy",
-                    "quantity": "1liter"
+                    "quantity": "5 liter"
                 },
                 "5ddd453067235": {
                     "name": "Peas",
@@ -568,15 +593,10 @@
                     "category": "Meat",
                     "quantity": "201g"
                 },
-                "5ddd45c443332": {
-                    "name": "Salmon",
-                    "category": "Meat",
-                    "quantity": "301g"
-                },
                 "5ddd4652bd40f": {
                     "name": "Strawberries",
                     "category": "Frozen",
-                    "quantity": "1kg"
+                    "quantity": "3kg"
                 },
                 "5ddd44f738eec": {
                     "name": "Tomatos",
@@ -587,6 +607,16 @@
                     "name": "Broccoli",
                     "category": "Greens",
                     "quantity": 4
+                },
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1 liter"
+                },
+                "5ddd469c78f3e": {
+                    "name": "Butter",
+                    "category": "Dairy",
+                    "quantity": "301g"
                 }
             }
         },
@@ -595,7 +625,8 @@
             "name": "Lover <3",
             "members": [
                 "5dde937677fc1",
-                "5dde9450affab"
+                "5dde9450affab",
+                "5dded4269c202"
             ],
             "ingredients": {
                 "5ddd461197995": {
@@ -617,16 +648,12 @@
                 "5dde94299b945",
                 "5dde947b7e228",
                 "5dde93ee0d541",
-                "5dde93aed1587"
+                "5dde93aed1587",
+                "5dded4269c202"
             ],
             "ingredients": {
                 "5ddd44aa9eb62": {
                     "name": "Cucumbers",
-                    "category": "Greens",
-                    "quantity": 1
-                },
-                "5ddd44bfcaecf": {
-                    "name": "Iceberg",
                     "category": "Greens",
                     "quantity": 1
                 },
@@ -638,16 +665,11 @@
                 "5ddd459a44186": {
                     "name": "Parma ham",
                     "category": "Meat",
-                    "quantity": "1g"
+                    "quantity": "301g"
                 },
                 "5ddd45274162a": {
                     "name": "Mushrooms",
                     "category": "Greens",
-                    "quantity": "1kg"
-                },
-                "5ddd45ff1d4b9": {
-                    "name": "Spinach",
-                    "category": "Frozen",
                     "quantity": "1kg"
                 },
                 "5ddd4652bd40f": {
@@ -662,7 +684,8 @@
             "name": "Boys office",
             "members": [
                 "5dde9450affab",
-                "5dde94097a4c2"
+                "5dde94097a4c2",
+                "5dded4269c202"
             ],
             "ingredients": {
                 "5ddd461197995": {
@@ -686,6 +709,14 @@
                     "quantity": "501g"
                 }
             }
+        },
+        "5dded4269c20c": {
+            "id": "5dded4269c20c",
+            "name": "Markus's pantry",
+            "members": [
+                "5dded4269c202"
+            ],
+            "ingredients": {}
         }
     },
     "ingredients": {
@@ -841,7 +872,7 @@
         },
         "5ddd45ff1d4b9": {
             "id": "5ddd45ff1d4b9",
-            "name": "Spinach",
+            "name": "Frozen spinach",
             "category": "Frozen",
             "unit": "kg"
         },
@@ -902,6 +933,252 @@
         "5ddd469c78f3e": {
             "id": "5ddd469c78f3e",
             "name": "Butter",
+            "category": "Dairy",
+            "unit": "g"
+        },
+        "5ddecd69a7a36": {
+            "id": "5ddecd69a7a36",
+            "name": "Chili",
+            "category": "Greens",
+            "unit": "g"
+        },
+        "5ddecd86b4f69": {
+            "id": "5ddecd86b4f69",
+            "name": "Coriander",
+            "category": "Greens",
+            "unit": "g"
+        },
+        "5ddecd9cdcb64": {
+            "id": "5ddecd9cdcb64",
+            "name": "Apples",
+            "category": "Greens",
+            "unit": "kg"
+        },
+        "5ddecdb0cf5ed": {
+            "id": "5ddecdb0cf5ed",
+            "name": "Bananas",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddecdc72c887": {
+            "id": "5ddecdc72c887",
+            "name": "Grapefruits",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddecdcd6ddb4": {
+            "id": "5ddecdcd6ddb4",
+            "name": "Avocados",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddecddc62222": {
+            "id": "5ddecddc62222",
+            "name": "Limes",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddecde8c7ed0": {
+            "id": "5ddecde8c7ed0",
+            "name": "Sweet potatos",
+            "category": "Greens",
+            "unit": "kg"
+        },
+        "5ddece0436091": {
+            "id": "5ddece0436091",
+            "name": "Watermelons",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddece0cb9940": {
+            "id": "5ddece0cb9940",
+            "name": "Cabbage",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddece1f821d3": {
+            "id": "5ddece1f821d3",
+            "name": "Lettuce",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddece3ee9e8f": {
+            "id": "5ddece3ee9e8f",
+            "name": "Cherries",
+            "category": "Greens",
+            "unit": "g"
+        },
+        "5ddece4abe9fe": {
+            "id": "5ddece4abe9fe",
+            "name": "Fennel",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddece5e6da9d": {
+            "id": "5ddece5e6da9d",
+            "name": "Kiwi",
+            "category": "Greens",
+            "unit": "kg"
+        },
+        "5ddece656dd93": {
+            "id": "5ddece656dd93",
+            "name": "Lemon",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddece9120f92": {
+            "id": "5ddece9120f92",
+            "name": "Olives",
+            "category": "Greens",
+            "unit": "kg"
+        },
+        "5ddece9d1abb5": {
+            "id": "5ddece9d1abb5",
+            "name": "Peppers",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddecea98fa0c": {
+            "id": "5ddecea98fa0c",
+            "name": "Pineapples",
+            "category": "Greens",
+            "unit": "entity"
+        },
+        "5ddecef1828ac": {
+            "id": "5ddecef1828ac",
+            "name": "Thai box",
+            "category": "Frozen",
+            "unit": "entity"
+        },
+        "5ddecefc97109": {
+            "id": "5ddecefc97109",
+            "name": "Frozen lasagna",
+            "category": "Frozen",
+            "unit": "entity"
+        },
+        "5ddecf0262488": {
+            "id": "5ddecf0262488",
+            "name": "Frozen green beans",
+            "category": "Frozen",
+            "unit": "kg"
+        },
+        "5ddecf20a2fa5": {
+            "id": "5ddecf20a2fa5",
+            "name": "Vanilla icecream",
+            "category": "Frozen",
+            "unit": "g"
+        },
+        "5ddecf44448e4": {
+            "id": "5ddecf44448e4",
+            "name": "Chocolate icecream",
+            "category": "Frozen",
+            "unit": "g"
+        },
+        "5ddecf4f3769e": {
+            "id": "5ddecf4f3769e",
+            "name": "Pommes frites",
+            "category": "Frozen",
+            "unit": "kg"
+        },
+        "5ddecf5cafaec": {
+            "id": "5ddecf5cafaec",
+            "name": "Frozen vegetables",
+            "category": "Frozen",
+            "unit": "kg"
+        },
+        "5ddecf88e8237": {
+            "id": "5ddecf88e8237",
+            "name": "Strawberry yohurt",
+            "category": "Dairy",
+            "unit": "liter"
+        },
+        "5ddecf9eb7552": {
+            "id": "5ddecf9eb7552",
+            "name": "Banana yohurt",
+            "category": "Dairy",
+            "unit": "liter"
+        },
+        "5ddecfa391c95": {
+            "id": "5ddecfa391c95",
+            "name": "Fat milk",
+            "category": "Dairy",
+            "unit": "liter"
+        },
+        "5ddecfa748450": {
+            "id": "5ddecfa748450",
+            "name": "Skim milk",
+            "category": "Dairy",
+            "unit": "liter"
+        },
+        "5ddecfba61c7a": {
+            "id": "5ddecfba61c7a",
+            "name": "Eggs",
+            "category": "Dairy",
+            "unit": "entity"
+        },
+        "5ddecfd2219f0": {
+            "id": "5ddecfd2219f0",
+            "name": "Cacao milk",
+            "category": "Dairy",
+            "unit": "liter"
+        },
+        "5ddecfeb04115": {
+            "id": "5ddecfeb04115",
+            "name": "Emmental",
+            "category": "Dairy",
+            "unit": "g"
+        },
+        "5ddecff16409d": {
+            "id": "5ddecff16409d",
+            "name": "Cheddar",
+            "category": "Dairy",
+            "unit": "g"
+        },
+        "5dded000699c0": {
+            "id": "5dded000699c0",
+            "name": "Gouda",
+            "category": "Dairy",
+            "unit": "g"
+        },
+        "5dded01dc0618": {
+            "id": "5dded01dc0618",
+            "name": "Lamb meat",
+            "category": "Meat",
+            "unit": "g"
+        },
+        "5dded020e5c5e": {
+            "id": "5dded020e5c5e",
+            "name": "Goat meat",
+            "category": "Meat",
+            "unit": "g"
+        },
+        "5dded03339003": {
+            "id": "5dded03339003",
+            "name": "Sausages",
+            "category": "Meat",
+            "unit": "g"
+        },
+        "5dded03cf062c": {
+            "id": "5dded03cf062c",
+            "name": "Prosciutto",
+            "category": "Meat",
+            "unit": "g"
+        },
+        "5dded065dea95": {
+            "id": "5dded065dea95",
+            "name": "Shrimps",
+            "category": "Meat",
+            "unit": "g"
+        },
+        "5dded065dea96": {
+            "id": "5dded065dea96",
+            "name": "Jambon",
+            "category": "Meat",
+            "unit": "g"
+        },
+        "5dded0d1a64fa": {
+            "id": "5dded0d1a64fa",
+            "name": "Quiche",
             "category": "Dairy",
             "unit": "g"
         }

@@ -46,9 +46,9 @@
 
             } else if ( $ingredientUnit == 'liter' ) {
 
-                $newValue = $currentValue + 1;
-                echo $newValue.$ingredientUnit;
-                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
+                $newValue = $currentValue + 0.5;
+                echo $newValue.' '.$ingredientUnit;
+                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.' '.$ingredientUnit;
             }
 
 
@@ -81,9 +81,9 @@
 
             } else if ( $ingredientUnit == 'liter' ) {
 
-                $newValue = $currentValue - 1;
-                echo $newValue.$ingredientUnit;
-                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
+                $newValue = $currentValue - 0.5;
+                echo $newValue.' '.$ingredientUnit;
+                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.' '.$ingredientUnit;
 
             }
 

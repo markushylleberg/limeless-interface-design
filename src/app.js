@@ -142,7 +142,7 @@ class API {
             url: `apis/api-change-item-value.php?item=${item}&action=${action}&id=${pantry}`,
             method: 'get'
         }).done( function(response){
-            // console.log(response);
+            console.log(response);
 
             if ( action == 'increase' ){
                 number.innerHTML = response;
