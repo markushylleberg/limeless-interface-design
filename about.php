@@ -1,6 +1,6 @@
 <!-- Import header from /components -->
 <?php 
-$pageTitle = 'Login';
+$pageTitle = 'About Limeless';
 require_once('components/header.php') ?>
 
 <div class="columns row mx-1">

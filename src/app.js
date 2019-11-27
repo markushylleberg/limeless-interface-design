@@ -390,6 +390,12 @@ class UI {
 
             for( var key in object ){
 
+                // let quantity = object[key]['quantity'];
+
+                // let isEntity = ( quantity.includes('entity') ? quantity.replace(/\D/g,'') : quantity );
+
+                // console.log(isEntity);
+
             let div = document.createElement('div');
             div.classList.add('pantry-entry');
             div.classList.add('row');

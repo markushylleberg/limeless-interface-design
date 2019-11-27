@@ -1,6 +1,6 @@
 <!-- Import header from /components -->
 <?php 
-$pageTitle = 'Login';
+$pageTitle = 'How to use';
 require_once('components/header.php') ?>
 
 

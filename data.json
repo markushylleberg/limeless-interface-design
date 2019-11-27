@@ -293,7 +293,7 @@
                 "5ddd44aa9eb62": {
                     "name": "Cucumbers",
                     "category": "Greens",
-                    "quantity": "7entity"
+                    "quantity": 7
                 },
                 "5ddd467d65cd6": {
                     "name": "Yogurt",
@@ -303,17 +303,22 @@
                 "5ddd463672aca": {
                     "name": "Garlic bread",
                     "category": "Frozen",
-                    "quantity": "4entity"
+                    "quantity": 4
                 },
                 "5ddd461197995": {
                     "name": "Pizza",
                     "category": "Frozen",
-                    "quantity": "3entity"
+                    "quantity": 4
                 },
                 "5ddd44f184a31": {
                     "name": "Broccoli",
                     "category": "Greens",
-                    "quantity": "1entity"
+                    "quantity": 1
+                },
+                "5ddd45bc72dbb": {
+                    "name": "Pork",
+                    "category": "Meat",
+                    "quantity": "1g"
                 }
             }
         },
@@ -332,12 +337,12 @@
                 "5ddd4516c7838": {
                     "name": "Asparagus",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 3
                 },
                 "5ddd451ec96af": {
                     "name": "Eggplant",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 3
                 },
                 "5ddd44cecf31b": {
                     "name": "Orange",
@@ -352,7 +357,7 @@
                 "5ddd463672aca": {
                     "name": "Garlic bread",
                     "category": "Frozen",
-                    "quantity": 1
+                    "quantity": 3
                 },
                 "5ddd4684efaf4": {
                     "name": "Milk",
@@ -425,12 +430,12 @@
                 "5ddd4516c7838": {
                     "name": "Asparagus",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 2
                 },
                 "5ddd451ec96af": {
                     "name": "Eggplant",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 2
                 },
                 "5ddd4584efa22": {
                     "name": "Ham",
@@ -479,7 +484,7 @@
                 "5ddd461197995": {
                     "name": "Pizza",
                     "category": "Frozen",
-                    "quantity": "2entity"
+                    "quantity": 2
                 }
             }
         },
@@ -498,7 +503,7 @@
                 "5ddd463672aca": {
                     "name": "Garlic bread",
                     "category": "Frozen",
-                    "quantity": 1
+                    "quantity": 3
                 },
                 "5ddd44aa9eb62": {
                     "name": "Cucumbers",
@@ -548,30 +553,40 @@
                     "category": "Dairy",
                     "quantity": "1liter"
                 },
-                "5ddd451ec96af": {
-                    "name": "Eggplant",
-                    "category": "Greens",
-                    "quantity": 1
-                },
-                "5ddd4516c7838": {
-                    "name": "Asparagus",
-                    "category": "Greens",
-                    "quantity": 1
-                },
                 "5ddd453067235": {
                     "name": "Peas",
                     "category": "Greens",
                     "quantity": "1kg"
                 },
-                "5ddd44e9e4c31": {
-                    "name": "Corn",
+                "5ddd461197995": {
+                    "name": "Pizza",
+                    "category": "Frozen",
+                    "quantity": 4
+                },
+                "5ddd4581e37b5": {
+                    "name": "Salami",
+                    "category": "Meat",
+                    "quantity": "201g"
+                },
+                "5ddd45c443332": {
+                    "name": "Salmon",
+                    "category": "Meat",
+                    "quantity": "301g"
+                },
+                "5ddd4652bd40f": {
+                    "name": "Strawberries",
+                    "category": "Frozen",
+                    "quantity": "1kg"
+                },
+                "5ddd44f738eec": {
+                    "name": "Tomatos",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": "1kg"
                 },
                 "5ddd44f184a31": {
                     "name": "Broccoli",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 4
                 }
             }
         },
@@ -586,12 +601,12 @@
                 "5ddd461197995": {
                     "name": "Pizza",
                     "category": "Frozen",
-                    "quantity": "3entity"
+                    "quantity": 1
                 },
                 "5ddd44f184a31": {
                     "name": "Broccoli",
                     "category": "Greens",
-                    "quantity": 1
+                    "quantity": 6
                 }
             }
         },
@@ -653,22 +668,22 @@
                 "5ddd461197995": {
                     "name": "Pizza",
                     "category": "Frozen",
-                    "quantity": 1
+                    "quantity": 5
                 },
                 "5ddd459e19fb1": {
                     "name": "Bacon",
                     "category": "Meat",
-                    "quantity": "1g"
+                    "quantity": "701g"
                 },
                 "5ddd45bc72dbb": {
                     "name": "Pork",
                     "category": "Meat",
-                    "quantity": "1g"
+                    "quantity": "701g"
                 },
                 "5ddd4581e37b5": {
                     "name": "Salami",
                     "category": "Meat",
-                    "quantity": "1g"
+                    "quantity": "501g"
                 }
             }
         }
