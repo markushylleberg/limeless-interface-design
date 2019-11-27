@@ -1368,3 +1368,12 @@ input[type=checkbox]:checked:after {
 .suggestions-panel::-webkit-scrollbar {
     display: none;
   }
+
+.explainer{
+    font-size: 16px!important;
+}
+
+.add-new-item-input.active{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}

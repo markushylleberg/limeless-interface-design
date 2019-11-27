@@ -9,18 +9,18 @@ require_once('components/header.php') ?>
         <div class="about-left-nav">
             <div class="page-title about-right-border px-1">
                 <h3 class="">How to use</h3>
-                <a href="#partOne" class="hide-on-mobile py-1 about-nav"><i class="fa fa-heart"></i> 1) Sign up</a>
-                <a href="#partTwo"class="hide-on-mobile py-1 about-nav"><i class="fa fa-heart"></i> 2) Pantries</a>
-                <a href="#partThree"class="hide-on-mobile py-1 about-nav"><i class="fa fa-heart"></i> 3) Explore</a>
+                <a href="#partOne" class="hide-on-mobile py-1 about-nav">1  Sign up</a>
+                <a href="#partTwo"class="hide-on-mobile py-1 about-nav">2 Pantries</a>
+                <a href="#partThree"class="hide-on-mobile py-1 about-nav">3 Explore</a>
             </div>
         </div>
     </div>
 
     <div id="about" class="sm-col-12 col-9 mx-1">
         <article id="partOne" class="about-article py-4">
-            <p class="my-1 sub-headline enlarged">Sign up</p>
+            <p class="my-1 sub-headline enlarged">1 Sign up</p>
 
-                <div><i class="fa fa-ellipsis-h text-white py-2"></i></div>
+                <div><i class="fa fa-minus text-white py-2"></i></div>
 
             <p>Limeless is a web service created by Kamille Rye and Markus Hylleberg.<br><br>
 
@@ -37,9 +37,9 @@ therefore also ideal for workplaces or other larger institutions with shared foo
 storage.</p>
         </article>
         <article id="partTwo" class="about-article py-4">
-            <p class="my-1 sub-headline enlarged">Pantries</p>
+            <p class="my-1 sub-headline enlarged">2 Pantries</p>
 
-                    <div><i class="fa fa-ellipsis-h text-white py-2"></i></div>
+                    <div><i class="fa fa-minus text-white py-2"></i></div>
 
             <p>Limeless is the result of an exam project on 1st semester / web development on 
 Copenhagen School of Technology & Design. Your data will therefore be accessible to 
@@ -54,9 +54,9 @@ purpose which is to exemplify how we code an actual login system as well as visu
 the interactions within the service.</p>
         </article>
         <article id="partThree" class="about-article py-2">
-            <p class="my-1 sub-headline enlarged">Explore</p>
+            <p class="my-1 sub-headline enlarged">3 Explore</p>
 
-                    <div><i class="fa fa-ellipsis-h text-white py-2"></i></div>
+                    <div><i class="fa fa-minus text-white py-2"></i></div>
 
             <p>Limeless is the result of an exam project on 1st semester / web development on 
 Copenhagen School of Technology & Design. Your data will therefore be accessible to 

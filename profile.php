@@ -249,10 +249,10 @@ foreach( $jData->pantries as $pantry ){
 
         <div id="pantries" class="row hidden">
 
-            <div class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
-                <div class="pantry-head row green-parent">
+            <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
+                <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i class="fa fa-asterisk text-lime"></i>Greens</p>
+                        <p class="explainer bold text-lime"><i class="fa fa-asterisk text-lime"></i>Greens</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -261,7 +261,7 @@ foreach( $jData->pantries as $pantry ){
 
                 <div class="separator"></div>
 
-                <div id="greenContainer" class="pantry-body green-container"><?php
+                <div id="greenContainer" class="pantry-body"><?php
 
                             foreach( $jData->pantries as $pantry ){
                                 foreach( $pantry->ingredients as $ingredient ){
@@ -295,12 +295,12 @@ foreach( $jData->pantries as $pantry ){
 
                                 ?></div>
 
-            </div>
+            </article>
 
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i class="fa fa-asterisk text-danger"></i>Meat</p>
+                        <p class="explainer bold text-danger"><i class="fa fa-asterisk text-danger"></i>Meat</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -350,7 +350,7 @@ foreach( $jData->pantries as $pantry ){
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i class="fa fa-asterisk text-info"></i>Frozen</p>
+                        <p class="explainer bold text-info"><i class="fa fa-asterisk text-info"></i>Frozen</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -403,7 +403,7 @@ foreach( $jData->pantries as $pantry ){
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold"><i class="fa fa-asterisk text-white"></i>Dairy</p>
+                        <p class="explainer bold text-white"><i class="fa fa-asterisk text-white"></i>Dairy</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -460,7 +460,7 @@ foreach( $jData->pantries as $pantry ){
                         <p>Type in the name of the item and select the correct one from the suggestions list.</p>
                     </div>
                     <div class="add-new-item-section sm-col-12 md-col-6 col-6 extra-height">
-                        <input id="addNewItemInput" type="text" oninput="UI.importSearchSuggestions()" name="txtNewIngredient" placeholder="Add ingredient...">
+                        <input id="addNewItemInput" class="add-new-item-input" type="text" oninput="UI.importSearchSuggestions()" name="txtNewIngredient" placeholder="Add ingredient...">
                         <button id="addNewItemBtn" class="btn-warning text-white my-1">Add</button>
                         <div id="suggestionsPanel" class="extra-height suggestions-panel"></div>
                     </div>

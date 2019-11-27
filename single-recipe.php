@@ -29,7 +29,7 @@ $jData = json_decode($sjData);
             <div class="time-wrapper my-1">
                 <p><?php echo $jData->recipes->$recipeId->time ?></p>
             </div>
-            <div><i class="fa fa-ellipsis-h text-white"></i></div>
+            <div><i class="fa fa-minus text-white"></i></div>
             <div class="description-wrapper my-1">
                 <p><?php echo $jData->recipes->$recipeId->description ?></p>
             </div>

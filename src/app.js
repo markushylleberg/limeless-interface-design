@@ -145,7 +145,7 @@ class API {
             url: `apis/api-change-item-value.php?item=${item}&action=${action}&id=${pantry}`,
             method: 'get'
         }).done( function(response){
-            console.log(response);
+            // console.log(response);
 
             if ( action == 'increase' ){
                 number.innerHTML = response;
@@ -463,6 +463,7 @@ class UI {
 
         if ( value !== '' ){
             one('#addNewItemBtn').classList.add('hidden');
+            one('#addNewItemInput').classList.add('active');
 
                 $.ajax({
                     url: 'apis/api-load-items-suggestions.php?value='+value,
@@ -488,11 +489,16 @@ class UI {
                         one('#suggestionsPanel').appendChild(div);
                     })
 
-                    console.log(response);
+                     if ( response == '[]' ){
+                        one('#addNewItemInput').classList.remove('active');
+                    }
+
+                    // console.log(response);
                 })
 
         } else {
             one('#addNewItemBtn').classList.remove('hidden');
+            one('#addNewItemInput').classList.remove('active');
             suggestionsPanel.innerHTML = '';
         }
 
@@ -513,7 +519,7 @@ class UI {
                                     <button onclick="API.changeValue('${item}', 'increase')" class="btn-secondary btn-small"><i class="fa fa-plus not-clickable"></i></button>
                                 </div>
                                 <div class="sm-col-2 md-col-2 col-2 align-center">
-                                    <p id="qty">1${isEntity}</p>
+                                    <p id="qty">1 ${isEntity}</p>
                                 </div>
                                 <div class="sm-col-2 md-col-2 col-2 text-left">
                                     <button onclick="API.changeValue('${item}', 'decrease')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
@@ -539,7 +545,7 @@ class UI {
             one('#dairyContainer').appendChild(div);                 
         
         }
-
+        one('#addNewItemInput').classList.remove('active');
         UI.applyOverlayToEmptySection();
     }
 

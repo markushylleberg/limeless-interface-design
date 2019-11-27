@@ -27,8 +27,8 @@
             if ( $ingredientUnit == 'kg' ){
 
                 $newValue = $currentValue + 0.5;
-                echo $newValue.$ingredientUnit;
-                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;                
+                echo $newValue.' '.$ingredientUnit;
+                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.' '.$ingredientUnit;                
 
             } else if ( $ingredientUnit == 'entity' ) {
 
@@ -40,8 +40,8 @@
             } else if ( $ingredientUnit == 'g' ) {
 
                 $newValue = $currentValue + 100;
-                echo $newValue.$ingredientUnit;
-                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
+                echo $newValue.' '.$ingredientUnit;
+                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.' '.$ingredientUnit;
                 
 
             } else if ( $ingredientUnit == 'liter' ) {
@@ -58,8 +58,8 @@
             if ( $ingredientUnit == 'kg' ){
 
                 $newValue = $currentValue - 0.5;
-                echo $newValue.$ingredientUnit;
-                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
+                echo $newValue.' '.$ingredientUnit;
+                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.' '.$ingredientUnit;
                 
 
 
@@ -74,8 +74,8 @@
             } else if ( $ingredientUnit == 'g' ) {
 
                 $newValue = $currentValue - 100;
-                echo $newValue.$ingredientUnit;
-                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.$ingredientUnit;
+                echo $newValue.' '.$ingredientUnit;
+                $jData->pantries->$pantry->ingredients->$ingredientId->quantity = $newValue.' '.$ingredientUnit;
                 
 
 

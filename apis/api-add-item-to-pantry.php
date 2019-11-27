@@ -20,7 +20,7 @@
             if ( $ingredient->unit == 'entity' ){
                 $newIngredient->quantity = 1;
             } else {
-                $newIngredient->quantity = "1{$ingredient->unit}";
+                $newIngredient->quantity = "1 {$ingredient->unit}";
             }
 
             $jData->pantries->$pantry->ingredients->$ingredientID = $newIngredient;

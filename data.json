@@ -98,6 +98,15 @@
             "password": "markus",
             "image": "5dded4269b73c",
             "notifications": {}
+        },
+        "5ddf066409283": {
+            "id": "5ddf066409283",
+            "firstname": "Michael",
+            "lastname": "Johnson",
+            "email": "michael@johnson.dk",
+            "password": "michael",
+            "image": "5ddf06640817f",
+            "notifications": {}
         }
     },
     "pantries": {
@@ -576,27 +585,47 @@
                 "5ddd4652bd40f": {
                     "name": "Strawberries",
                     "category": "Frozen",
-                    "quantity": "3kg"
+                    "quantity": "3 kg"
                 },
                 "5dded01dc0618": {
                     "name": "Lamb meat",
                     "category": "Meat",
-                    "quantity": "1g"
+                    "quantity": "201 g"
                 },
                 "5dded020e5c5e": {
                     "name": "Goat meat",
                     "category": "Meat",
-                    "quantity": "1g"
+                    "quantity": "101 g"
                 },
                 "5ddecfa391c95": {
                     "name": "Fat milk",
                     "category": "Dairy",
-                    "quantity": "1liter"
+                    "quantity": "2.5 liter"
                 },
                 "5ddd4684efaf4": {
                     "name": "Milk",
                     "category": "Dairy",
-                    "quantity": "1liter"
+                    "quantity": "1.5 liter"
+                },
+                "5ddd459a44186": {
+                    "name": "Parma ham",
+                    "category": "Meat",
+                    "quantity": "201 g"
+                },
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1 liter"
+                },
+                "5ddecfa748450": {
+                    "name": "Skim milk",
+                    "category": "Dairy",
+                    "quantity": "0.5 liter"
+                },
+                "5ddd445d2ad79": {
+                    "name": "Carrots",
+                    "category": "Greens",
+                    "quantity": "1.5 kg"
                 }
             }
         },
@@ -608,13 +637,7 @@
                 "5dde9450affab",
                 "5dded4269c202"
             ],
-            "ingredients": {
-                "5ddd461197995": {
-                    "name": "Pizza",
-                    "category": "Frozen",
-                    "quantity": 1
-                }
-            }
+            "ingredients": {}
         },
         "5dde9cc9841af": {
             "id": "5dde9cc9841af",
@@ -630,22 +653,52 @@
                 "5ddd459a44186": {
                     "name": "Parma ham",
                     "category": "Meat",
-                    "quantity": "301g"
-                },
-                "5ddd45274162a": {
-                    "name": "Mushrooms",
-                    "category": "Greens",
-                    "quantity": "1kg"
+                    "quantity": "301 g"
                 },
                 "5ddd4684efaf4": {
                     "name": "Milk",
                     "category": "Dairy",
-                    "quantity": "1liter"
+                    "quantity": "1.5 liter"
                 },
                 "5ddd46812c2ff": {
                     "name": "Creme fraishe",
                     "category": "Dairy",
-                    "quantity": "1liter"
+                    "quantity": "0.5 liter"
+                },
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Frozen spinach",
+                    "category": "Frozen",
+                    "quantity": "1 kg"
+                },
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": 1
+                },
+                "5ddecde8c7ed0": {
+                    "name": "Sweet potatos",
+                    "category": "Greens",
+                    "quantity": "1 kg"
+                },
+                "5ddd4584efa22": {
+                    "name": "Ham",
+                    "category": "Meat",
+                    "quantity": "1 g"
+                },
+                "5dded01dc0618": {
+                    "name": "Lamb meat",
+                    "category": "Meat",
+                    "quantity": "1 g"
+                },
+                "5ddd4652bd40f": {
+                    "name": "Strawberries",
+                    "category": "Frozen",
+                    "quantity": "1 kg"
                 }
             }
         },
@@ -661,22 +714,27 @@
                 "5ddd461197995": {
                     "name": "Pizza",
                     "category": "Frozen",
-                    "quantity": 5
+                    "quantity": 4
                 },
                 "5ddd459e19fb1": {
                     "name": "Bacon",
                     "category": "Meat",
-                    "quantity": "701g"
+                    "quantity": "801 g"
                 },
                 "5ddd45bc72dbb": {
                     "name": "Pork",
                     "category": "Meat",
-                    "quantity": "701g"
+                    "quantity": "801 g"
                 },
                 "5ddd4581e37b5": {
                     "name": "Salami",
                     "category": "Meat",
-                    "quantity": "501g"
+                    "quantity": "401 g"
+                },
+                "5ddd44f184a31": {
+                    "name": "Broccoli",
+                    "category": "Greens",
+                    "quantity": 1
                 }
             }
         },
@@ -690,9 +748,27 @@
                 "5ddd44aa9eb62": {
                     "name": "Cucumbers",
                     "category": "Greens",
-                    "quantity": 4
+                    "quantity": 2
+                },
+                "5ddd45bc72dbb": {
+                    "name": "Pork",
+                    "category": "Meat",
+                    "quantity": "301 g"
+                },
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1.5 liter"
                 }
             }
+        },
+        "5ddf0664092bd": {
+            "id": "5ddf0664092bd",
+            "name": "Michael's pantry",
+            "members": [
+                "5ddf066409283"
+            ],
+            "ingredients": {}
         }
     },
     "ingredients": {
