@@ -573,50 +573,30 @@
                 "5dded4269c202"
             ],
             "ingredients": {
-                "5ddd4684efaf4": {
-                    "name": "Milk",
-                    "category": "Dairy",
-                    "quantity": "5 liter"
-                },
-                "5ddd453067235": {
-                    "name": "Peas",
-                    "category": "Greens",
-                    "quantity": "1kg"
-                },
-                "5ddd461197995": {
-                    "name": "Pizza",
-                    "category": "Frozen",
-                    "quantity": 4
-                },
-                "5ddd4581e37b5": {
-                    "name": "Salami",
-                    "category": "Meat",
-                    "quantity": "201g"
-                },
                 "5ddd4652bd40f": {
                     "name": "Strawberries",
                     "category": "Frozen",
                     "quantity": "3kg"
                 },
-                "5ddd44f738eec": {
-                    "name": "Tomatos",
-                    "category": "Greens",
-                    "quantity": "1kg"
+                "5dded01dc0618": {
+                    "name": "Lamb meat",
+                    "category": "Meat",
+                    "quantity": "1g"
                 },
-                "5ddd44f184a31": {
-                    "name": "Broccoli",
-                    "category": "Greens",
-                    "quantity": 4
+                "5dded020e5c5e": {
+                    "name": "Goat meat",
+                    "category": "Meat",
+                    "quantity": "1g"
                 },
-                "5ddd46812c2ff": {
-                    "name": "Creme fraishe",
+                "5ddecfa391c95": {
+                    "name": "Fat milk",
                     "category": "Dairy",
-                    "quantity": "1 liter"
+                    "quantity": "1liter"
                 },
-                "5ddd469c78f3e": {
-                    "name": "Butter",
+                "5ddd4684efaf4": {
+                    "name": "Milk",
                     "category": "Dairy",
-                    "quantity": "301g"
+                    "quantity": "1liter"
                 }
             }
         },
@@ -633,11 +613,6 @@
                     "name": "Pizza",
                     "category": "Frozen",
                     "quantity": 1
-                },
-                "5ddd44f184a31": {
-                    "name": "Broccoli",
-                    "category": "Greens",
-                    "quantity": 6
                 }
             }
         },
@@ -652,16 +627,6 @@
                 "5dded4269c202"
             ],
             "ingredients": {
-                "5ddd44aa9eb62": {
-                    "name": "Cucumbers",
-                    "category": "Greens",
-                    "quantity": 1
-                },
-                "5ddd44aff31ce": {
-                    "name": "Ginger",
-                    "category": "Greens",
-                    "quantity": "1g"
-                },
                 "5ddd459a44186": {
                     "name": "Parma ham",
                     "category": "Meat",
@@ -672,10 +637,15 @@
                     "category": "Greens",
                     "quantity": "1kg"
                 },
-                "5ddd4652bd40f": {
-                    "name": "Strawberries",
-                    "category": "Frozen",
-                    "quantity": "1kg"
+                "5ddd4684efaf4": {
+                    "name": "Milk",
+                    "category": "Dairy",
+                    "quantity": "1liter"
+                },
+                "5ddd46812c2ff": {
+                    "name": "Creme fraishe",
+                    "category": "Dairy",
+                    "quantity": "1liter"
                 }
             }
         },
@@ -716,7 +686,13 @@
             "members": [
                 "5dded4269c202"
             ],
-            "ingredients": {}
+            "ingredients": {
+                "5ddd44aa9eb62": {
+                    "name": "Cucumbers",
+                    "category": "Greens",
+                    "quantity": 4
+                }
+            }
         }
     },
     "ingredients": {

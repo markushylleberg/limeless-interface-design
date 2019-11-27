@@ -249,8 +249,8 @@ foreach( $jData->pantries as $pantry ){
 
         <div id="pantries" class="row hidden">
 
-            <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
-                <div class="pantry-head row">
+            <div class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
+                <div class="pantry-head row green-parent">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
                         <p class="explainer bold"><i class="fa fa-asterisk text-lime"></i>Greens</p>
                     </div>
@@ -261,9 +261,7 @@ foreach( $jData->pantries as $pantry ){
 
                 <div class="separator"></div>
 
-                <div id="greenContainer" class="pantry-body">
-
-                        <?php
+                <div id="greenContainer" class="pantry-body green-container"><?php
 
                             foreach( $jData->pantries as $pantry ){
                                 foreach( $pantry->ingredients as $ingredient ){
@@ -287,7 +285,7 @@ foreach( $jData->pantries as $pantry ){
                                                     </div>
                     
                                             <div class="sm-col-2 md-col-2 col-2">
-                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold"><i class="fa fa-trash not-clickable"></i></p>
                                             </div>
                                         </div>
                                                 ';
@@ -295,11 +293,9 @@ foreach( $jData->pantries as $pantry ){
                                 }
                             }
 
-                                ?>
+                                ?></div>
 
-                </div>
-
-            </article>
+            </div>
 
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
@@ -339,7 +335,7 @@ foreach( $jData->pantries as $pantry ){
                                                 </div>
 
                                         <div class="sm-col-2 md-col-2 col-2">
-                                            <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                                            <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold"><i class="fa fa-trash not-clickable"></i></p>
                                         </div>
                                     </div>
                                             ';
@@ -390,7 +386,7 @@ foreach( $jData->pantries as $pantry ){
                                                     </div>
 
                                             <div class="sm-col-2 md-col-2 col-2">
-                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold"><i class="fa fa-trash not-clickable"></i></p>
                                             </div>
                                         </div>
                                                 ';
@@ -443,7 +439,7 @@ foreach( $jData->pantries as $pantry ){
                                                     </div>
 
                                             <div class="sm-col-2 md-col-2 col-2">
-                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                                                <p onclick="API.changeValue(\''.$ingredient->name.'\', \'delete\')" class="pointer delete-btn text-danger underline bold"><i class="fa fa-trash not-clickable"></i></p>
                                             </div>
                                         </div>
                                                 ';

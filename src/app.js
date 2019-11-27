@@ -126,7 +126,10 @@ class API {
 
             UI.addItemToListUI(name, category, quantity);
 
+
         });
+
+        UI.applyOverlayToEmptySection();
     }
 
     static changeValue(item, action){
@@ -149,10 +152,12 @@ class API {
             } else if ( action == 'decrease' ){
                 number.innerHTML = response;
             } else if ( action == 'delete' ){
-                parent.innerHTML = '';
+                parent.remove();
             }
     
-        })
+            UI.applyOverlayToEmptySection();
+        });
+
 
     }
 
@@ -231,6 +236,8 @@ class UI {
                 tabId.children[i].classList.remove('active');
             }
         }
+
+        UI.applyOverlayToEmptySection();
 
     }
 
@@ -411,7 +418,7 @@ class UI {
                                         <button onclick="API.changeValue('${object[key]['name']}', 'decrease')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                     </div>
                             <div class="sm-col-2 md-col-2 col-2">
-                                <p onclick="API.changeValue('${object[key]['name']}', 'delete')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                                <p onclick="API.changeValue('${object[key]['name']}', 'delete')" class="pointer delete-btn text-danger underline bold"><i class="fa fa-trash not-clickable"></i></p>
                             </div>`;
 
 
@@ -440,10 +447,12 @@ class UI {
                     // console.log('dairy');                    
 
                 }
+
                 // console.log(object[key]['name']);
                 // console.log(object[key]['quantity']);
                 // console.log(object[key]['category']);
             }
+            UI.applyOverlayToEmptySection();
         })
         
     }
@@ -510,7 +519,7 @@ class UI {
                                     <button onclick="API.changeValue('${item}', 'decrease')" class="btn-secondary btn-small"><i class="fa fa-minus not-clickable"></i></button>
                                 </div>
                         <div class="sm-col-2 md-col-2 col-2">
-                            <p onclick="API.changeValue('${item}', 'delete')" class="pointer delete-btn text-danger underline bold">Delete</p>
+                            <p onclick="API.changeValue('${item}', 'delete')" class="pointer delete-btn text-danger underline bold"><i class="fa fa-trash not-clickable"></i></p>
                         </div>`;
 
         if ( category == 'Greens' ) {
@@ -531,6 +540,41 @@ class UI {
         
         }
 
+        UI.applyOverlayToEmptySection();
+    }
+
+    static applyOverlayToEmptySection(){
+
+        let greenContainer = one('#greenContainer');
+        let meatContainer = one('#meatContainer');
+        let frozenContainer = one('#frozenContainer');
+        let dairyContainer = one('#dairyContainer');
+
+        if ( greenContainer.children.length == 0 ){
+            greenContainer.parentElement.classList.add('opacity-overlay');
+        } else {
+            greenContainer.parentElement.classList.remove('opacity-overlay');
+        }
+
+        if ( meatContainer.children.length == 0 ){
+            meatContainer.parentElement.classList.add('opacity-overlay');
+        } else {
+            meatContainer.parentElement.classList.remove('opacity-overlay');
+        }
+
+        if ( frozenContainer.children.length == 0 ){
+            frozenContainer.parentElement.classList.add('opacity-overlay');
+        } else {
+            frozenContainer.parentElement.classList.remove('opacity-overlay');
+        }
+
+        if ( dairyContainer.children.length == 0 ){
+            dairyContainer.parentElement.classList.add('opacity-overlay');
+        } else {
+            dairyContainer.parentElement.classList.remove('opacity-overlay');
+        }
+
+        
     }
 
 }
