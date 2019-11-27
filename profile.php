@@ -240,7 +240,7 @@ foreach( $jData->pantries as $pantry ){
                                             <p class="text-secondary">'.$recipe->shortdescription.'</p>
                                         </div>
                                     </div>
-                                    <button class="read-more-btn btn-white my-1"><a class="text-primary" href="single-recipe.php?id='.$recipe->id.'">Read more</a></button>
+                                        <a class="text-primary" href="single-recipe.php?id='.$recipe->id.'"><button class="read-more-btn btn-white my-1">Read more</button></a>
                                 </div>
                             </div>
                         </div>';

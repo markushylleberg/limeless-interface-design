@@ -24,12 +24,13 @@ $jData = json_decode($sjData);
 
         <div class="single-recipe-header col-6 md-col-6 sm-col-12 m-2">
             <div class="title-wrapper">
-                <h2><?php echo $jData->recipes->$recipeId->name ?></h2>
+                <h2><?php echo $jData->recipes->$recipeId->name ?> <i class="fa fa-heart"></i></h2>
             </div>
             <div class="time-wrapper my-1">
                 <p><?php echo $jData->recipes->$recipeId->time ?></p>
             </div>
-            <div class="description-wrapper">
+            <div><i class="fa fa-ellipsis-h text-white"></i></div>
+            <div class="description-wrapper my-1">
                 <p><?php echo $jData->recipes->$recipeId->description ?></p>
             </div>
         </div>
@@ -40,12 +41,24 @@ $jData = json_decode($sjData);
     <div class="single-recipe-section">
         <div class="ingredient-wrapper row">
             <div class="ingredient-list col-6 md-col-6 sm-col-12 py-1 text-center">
-                <p class="enlarged">Ingredient list</p>
-                <p>Ingredient 2</p>
+                <p class="enlarged my-1">Ingredient list</p>
+                <p>Ingredient 1</p>
+                <p>Ingredient 5</p>
+                <p>Ingredient 8</p>
+                <p>Ingredient 9</p>
+                <p>Ingredient 11</p>
+                <p>Ingredient 53</p>
+                <p>Ingredient 75</p>
             </div>
             <div class="ingredients-missing col-6 md-col-6 sm-col-12 py-1 text-center">
-                <p class="enlarged">You are missing</p>
-                <p>Ingredient 4</p>
+                <p class="enlarged my-1">You are missing</p>
+                <p class="opacity-overlay">Ingredient 1</p>
+                <p class="text-danger"><i class="fa fa-minus"></i>Ingredient 5</p>
+                <p class="opacity-overlay">Ingredient 8</p>
+                <p class="text-danger"><i class="fa fa-minus"></i>Ingredient 9</p>
+                <p class="opacity-overlay">Ingredient 11</p>
+                <p class="opacity-overlay">Ingredient 53</p>
+                <p class="text-danger"><i class="fa fa-minus"></i>Ingredient 75</p>
             </div>
         </div>
     </div>
@@ -55,9 +68,9 @@ $jData = json_decode($sjData);
     <div class="single-recipe-section">
         <div class="procedure-wrapper mx-2">
             <p class="enlarged">Procedure</p>
-            <p class="py-1">1) Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem </p>
-            <p class="py-1">2) Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem </p>
-            <p class="py-1">3) Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem </p>
+            <p class="py-1"><i class="fa fa-circle"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem </p>
+            <p class="py-1"><i class="fa fa-circle"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem </p>
+            <p class="py-1"><i class="fa fa-circle"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem </p>
         </div>
     </div>
 
