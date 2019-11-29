@@ -222,6 +222,8 @@ class UI {
                 one('#'+id).classList.remove('active');
             }
         }
+
+        one('#changeTabTrigger').classList.remove('active');
     }
 
     static changeTab(id, el){

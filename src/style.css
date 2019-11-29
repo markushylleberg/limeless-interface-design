@@ -214,7 +214,8 @@ i{
 }
 
 .btn-big{
-    padding: 17px 52px!important;
+    padding: 10px 25px!important;
+    font-size: 15px;
 }
 
 .btn-small{
@@ -232,8 +233,9 @@ i{
     border-radius: 8px;
     outline: 0;
     border: 0;
-    padding: 10px 32px;
-    /* margin: 10px 0; */
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 400;
     transition: .2s ease;
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
@@ -260,7 +262,9 @@ i{
     border-radius: 8px;
     outline: 0;
     border: 0;
-    padding: 10px 32px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 400;
     margin: 10px 0;
     transition: .2s ease;
     -webkit-transition: .2s ease;
@@ -280,6 +284,10 @@ i{
     background-color: #8f8585;
 }
 
+.btn-secondary i {
+    padding: 0 10px 0 0;
+}
+
     /* ----->  white button */
 
 .btn-white{
@@ -288,7 +296,9 @@ i{
     border-radius: 8px;
     outline: 0;
     border: 0;
-    padding: 10px 32px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 400;
     margin: 10px 0;
     transition: .2s ease;
     -webkit-transition: .2s ease;
@@ -314,8 +324,9 @@ i{
     border-radius: 8px;
     outline: 0;
     border: 0;
-    padding: 10px 32px;
-    /* margin: 10px 0; */
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 400;
     transition: .2s ease;
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
@@ -342,8 +353,8 @@ i{
 }
 
 .medium-avatar{
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .round-img{
@@ -512,10 +523,10 @@ input[type=checkbox]:checked:after {
     position: absolute;
     z-index: 10;
     border: 1px solid #ededed94;
-    transition: .15s ease;
-    -webkit-transition: .15s ease;
-    -moz-transition: .15s ease;
-    -o-transition: .15s ease;
+    transition: .08s ease;
+    -webkit-transition: .08s ease;
+    -moz-transition: .08s ease;
+    -o-transition: .08s ease;
 }
 
 .checkbox-field-inner div{
@@ -1384,4 +1395,8 @@ input[type=checkbox]:checked:after {
 .add-new-item-input.active{
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.extra-font-size{
+    font-size: 20px;
 }

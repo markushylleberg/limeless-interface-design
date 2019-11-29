@@ -47,10 +47,10 @@ foreach( $jData->pantries as $pantry ){
                     <img src="./src/images/<?php echo $jData->users->$id->image ?>" class="round-img medium-avatar" alt="User avatar">
                 </div>
                     <div class="title-wrapper">
-                        <p class="bold">Hello, <?php echo $jData->users->$id->firstname ?>!</p>
+                        <p class="bold extra-font-size">Hello, <?php echo $jData->users->$id->firstname ?>!</p>
 
                     <div class="edit-profile-btn">
-                        <a href="edit-profile.php"><button class="btn-secondary"><i class="fa fa-pencil"></i>Edit</button></a>
+                        <a href="edit-profile.php"><button class="btn-secondary"><i class="fa fa-pencil"></i>Edit profile</button></a>
                     </div>
                 </div>
             </div>

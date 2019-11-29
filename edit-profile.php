@@ -52,7 +52,7 @@ require_once('components/header.php');
                         <span>Password</span>
                 </label>
         </div>
-        <div class="text-right col-12">
+        <div class="text-right col-12 my-1">
             <button id="saveEditProfileBtn" class="btn-warning text-white btn-big">Save</button>
         </div>
     </div>
