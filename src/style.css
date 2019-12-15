@@ -189,7 +189,7 @@ p, span, label, input{
 a {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -219,7 +219,7 @@ i{
 }
 
 .btn-small{
-    padding: 3px!important;
+    padding: 5.5px 7.5px!important;
     height: 25px;
     width: 25px;
     border-radius: 50%!important;
@@ -338,7 +338,7 @@ i{
 }
 
 .btn-warning:hover{
-    background-color: rgb(206, 207, 112);
+    background-color: #cecf70;
 }
 
 .btn-warning:active{
@@ -468,7 +468,8 @@ input[type=checkbox]:checked:after {
 }
 
 .pantry-selected{
-    font-size: 100%!important;
+    font-size: 24px!important;
+    white-space: nowrap;
 }
 
 .select-option{
@@ -490,22 +491,32 @@ input[type=checkbox]:checked:after {
 }
 
 .select-option::before{
+    font-family: "Font Awesome 5 Free";
     content: "\f111";
-    color: #ffffff;
+    font-weight: 600;
+    color: #ededed;
     position: absolute;
-    font-family: FontAwesome;
     pointer-events: none;
 }
 
 .select-option.active::before{
-    content: "\f28d"!important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 400;
+    color: #ededed;
+    
+}
+
+.select-field.active::after{
+    content: "\f077";
 }
 
 .checkbox-field::after, .select-field::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
     content: "\f078";
     color: #ffffff;
     position: absolute;
-    font-family: FontAwesome;
     text-align: right;
     float: right;
     width: 100%;
@@ -649,7 +660,7 @@ input[type=checkbox]:checked:after {
 .notification-item i {
     position: relative;
     color: white;
-    top: -6px;
+    top: -3px;
     cursor: pointer;
 }
 
@@ -908,6 +919,10 @@ input[type=checkbox]:checked:after {
         grid-column: auto / span 12!important;
     }
 
+    .sm-col-11{
+        grid-column: auto / span 11!important;
+    }
+
     .sm-col-10{
         grid-column: auto / span 10!important;
     }
@@ -1158,20 +1173,18 @@ input[type=checkbox]:checked:after {
     width: 100vw!important;
     min-height: 100vh!important;
     object-fit: cover;
-    box-shadow: 
-    inset 0px 60px 62px 20px #333333,
-    inset 0px -60px 62px -20px #333333;
+    /* box-shadow: inset -20px 60px 62px 0px #333333, inset 0px -60px 62px 0px #333333; */
 }
 
 .login-image-background::after{
     content: '';
-    background: url('../src/images/bg-image-bigger.png');
+    background: url('../src/images/new-bg-image.png');
     background-size: cover;
     background-position: 50% 90%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
-    opacity: .25;
+    opacity: .45;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1189,15 +1202,15 @@ input[type=checkbox]:checked:after {
 
 .error-message{
     font-size: 11px;
-    position: absolute;
     opacity: 0;
 }
 
 .error-message::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
     content: "\f06a";
     padding: 3px;
-    font-family: FontAwesome;
-    font-weight: 500;
+    color: #ededed;
 }
 
 /* -----> 4.4) About classes */
@@ -1399,4 +1412,9 @@ input[type=checkbox]:checked:after {
 
 .extra-font-size{
     font-size: 20px;
+}
+
+.tagline{
+    font-size: 18px;
+    font-weight: 500!important;
 }

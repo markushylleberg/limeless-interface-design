@@ -17,7 +17,7 @@ if ( $session == true ){
                 <h2>Welcome</h2>
                 <p class="tagline my-1">We're glad that you're here!</p>
             </div>
-            <form action="POST" id="signup" class="login-form px-1">
+            <form action="POST" id="signup" class="login-form px-2">
                 <p class="text-center bold">Signup</p>
 
                 <div class="col-12 my-1">
@@ -48,22 +48,27 @@ if ( $session == true ){
                     </label>
                 </div>
 
-                <div class="col-12 my-1 text-white">
-                    <label for="image">
-                            <i class="fa fa-camera"></i>Add image
-                    <input type="file" name="image" id="image" class="hidden">
-                    </label>
+                <div class="col-12 my-1 text-white row">
+
+                    <div class="col-6">
+                        <label for="image">
+                                <i class="fa fa-camera"></i>Add image
+                        <input type="file" name="image" id="image" class="hidden">
+                        </label>
+                    </div>
+                    
+                    <div class="text-right col-6">
+                        <button id="signup" class="btn-primary btn-big">Signup</button>
+                    </div>
+
                 </div>
 
-                <p id="errorMessage" class="my-1 text-danger error-message"></p>
+                <p id="errorMessage" class="error-message"></p>
 
-                <div class="text-right">
-                    <button id="signup" class="btn-primary btn-big">Signup</button>
-                </div>
             </form>
         </article>
 
-        <div class="not-a-member text-center my-2">
+        <div class="not-a-member text-center my-3">
             <p>Already have an account?</p>
             <a href="index.php" class="underline">Login</a>
         </div>

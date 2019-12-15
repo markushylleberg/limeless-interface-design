@@ -12,7 +12,7 @@ require_once('components/header.php');
 <h3 class="my-1">Edit profile</h3>
 <p>Simply click the field you wish to edit and type in the new value. Remeber to hit 'Save changes' before you leave.</p>
 
-    <form id="editProfile" method="POST">
+    <form id="editProfile" method="POST" class="my-2">
         <div class="text-left row">
                 <div class="edit profile-picture col-6">
                     <div class="image-wrapper">
@@ -53,7 +53,7 @@ require_once('components/header.php');
                 </label>
         </div>
         <div class="text-right col-12 my-1">
-            <button id="saveEditProfileBtn" class="btn-warning text-white btn-big">Save</button>
+            <button id="saveEditProfileBtn" class="btn-warning btn-big">Save</button>
         </div>
     </div>
     </form>

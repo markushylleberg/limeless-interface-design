@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:300i,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"/>
     <link rel="stylesheet" href="src/style.css">
     <title><?php echo $pageTitle ?></title>
@@ -73,7 +73,7 @@
                 ?>
             </li>
         </ul>
-        <div class="avatar text-right col-2 sm-col-10 z-index-10">
+        <div class="avatar text-right col-2 sm-col-11 z-index-10">
                 <?php
                     echo $showAvatar;
                 ?>

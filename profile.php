@@ -50,7 +50,7 @@ foreach( $jData->pantries as $pantry ){
                         <p class="bold extra-font-size">Hello, <?php echo $jData->users->$id->firstname ?>!</p>
 
                     <div class="edit-profile-btn">
-                        <a href="edit-profile.php"><button class="btn-secondary"><i class="fa fa-pencil"></i>Edit profile</button></a>
+                        <a href="edit-profile.php"><button class="btn-secondary"><i class="fa fa-pen"></i>Edit profile</button></a>
                     </div>
                 </div>
             </div>
@@ -111,51 +111,53 @@ foreach( $jData->pantries as $pantry ){
             </div>
 
             <div class="row">
-                <div class="selected-field-name sm-col-4 md-col-4 col-2">
-                    <p id="pantrySelected" class="bold pantry-selected"><?php echo $firstPantryName ?></p>
-                </div>
-                <div class="members-of-pantry sm-col-4 row">
+                    <div class="selected-field-name">
+                        <div>
+                            <p id="pantrySelected" class="bold pantry-selected px-1"><?php echo $firstPantryName ?></p>
+                        </div>
+                    </div>
+                    <div class="members-of-pantry row">
 
-                    <?php
+                        <?php
 
-                            foreach( $jData->pantries as $pantry ){
+                                foreach( $jData->pantries as $pantry ){
 
-                                foreach( $jData->users as $user ){
-                                    // if ( in_array($user->id, $pantry->members) ){
-                                    //     echo 'No pantries.';
-                                    //     exit;
-                                    // }
-                                    if ( in_array($user->id, $pantry->members) && $pantry->id == $selectedPantryId ){
-                                        echo '<div class="member-image">
-                                                <img src="src/images/'.$user->image.'" class="small-avatar round-img sm-col-2">
-                                            </div>';
+                                    foreach( $jData->users as $user ){
+                                        // if ( in_array($user->id, $pantry->members) ){
+                                        //     echo 'No pantries.';
+                                        //     exit;
+                                        // }
+                                        if ( in_array($user->id, $pantry->members) && $pantry->id == $selectedPantryId ){
+                                            echo '<div class="member-image">
+                                                    <img src="src/images/'.$user->image.'" class="small-avatar round-img sm-col-2">
+                                                </div>';
+                                        }
                                     }
-                                }
-                               };
+                                };
 
-                    ?>
+                        ?>
 
                 </div>
-                <div class="text-white col-8 md-col-6 sm-col-4 text-right hidden">
-                    <button id="newPantryBtn" class="btn-warning text-white unclickable-icon"><i class="fa fa-plus"></i>New pantry</button>
+                <div class="text-white col-10 text-right hidden">
+                    <button id="newPantryBtn" class="btn-warning unclickable-icon"><i class="fa fa-plus"></i>New pantry</button>
                 </div>
-                <div class="text-white col-8 md-col-6 sm-col-4 text-right hidden">
-                    <button id="cancelPantryBtn" class="btn-warning danger text-white unclickable-icon"><i class="fa fa-times"></i>Cancel</button>
+                <div class="text-white col-10 text-right hidden">
+                    <button id="cancelPantryBtn" class="btn-warning danger text-white unclickable-icon"><i class="fa fa-times"></i>New pantry</button>
                 </div>
 
                 <div id="newPantrySection" class="new-pantry-section my-1 col-12 hidden">
                     <div class="col-10 md-col-10">
                             <p class="mx-1 enlarged">Create new pantry</p>
                             <p class="mx-1">Please make sure to type the correct email of the member you wish to add to this pantry</p>
-                        <form id="newPantryFrm" class="row">
-                            <div class="col-4 md-col-4 sm-col-12 m-1">
+                        <form id="newPantryFrm" class="row align-center">
+                            <div class="col-4 md-col-12 sm-col-12 m-1">
                                 <input type="text" name="txtPantryName" id="txtPantryName" placeholder="Name of pantry">
                             </div>
-                            <div class="col-4 md-col-4 sm-col-12 m-1">
+                            <div class="col-4 md-col-12 sm-col-12 m-1">
                                 <input type="text" name="txtPantryMemberMail" id="txtPantryMemberMail" placeholder="Email of member">
                             </div>
-                            <div class="col-4 md-col-4 sm-col-12 align-center">
-                                <button id="submitNewPantryBtn" class="btn-warning text-white">Create</button>
+                            <div class="col-4 md-col-4 sm-col-12 m-1">
+                                <button id="submitNewPantryBtn" class="btn-primary btn-big"><i class="fa fa-plus"></i>Create</button>
                             </div>
                         </form>
                     </div>
@@ -163,9 +165,10 @@ foreach( $jData->pantries as $pantry ){
 
             </div>
 
-        <div class="row" id="changePantrySection">
+        <div class="row my-1" id="changePantrySection">
 
 
+            <div>
             <div class="outer-selection sm-col-6 md-col-3 col-2 my-1" id="changeTab">
                 <div class="select-field" id="changeTabTrigger" onclick="UI.openOptionsOnSelectElement('Pantry')"><p><?php echo $firstPantryName ?></p></div>
                     <div class="select-field-inner white-ouline-btn" id="Pantry">
@@ -195,9 +198,9 @@ foreach( $jData->pantries as $pantry ){
             ?>
                 </div>
              </div>
-                
-            <div class="sm-col-4 md-col-9 col-9 py-1 text-left">
-                <p><i>Click the icon to change pantry</i></p>
+             <div class="sm-col-4 md-col-9 col-9 py-1 text-left">
+                 <p class="italic">Click the icon to change pantry</p>
+                </div>
             </div>
         </div>
     </div>
@@ -252,7 +255,7 @@ foreach( $jData->pantries as $pantry ){
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold text-lime"><i class="fa fa-asterisk text-lime"></i>Greens</p>
+                        <p class="explainer bold text-green"><i class="fa fa-leaf"></i>Greens</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -300,7 +303,7 @@ foreach( $jData->pantries as $pantry ){
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold text-danger"><i class="fa fa-asterisk text-danger"></i>Meat</p>
+                        <p class="explainer bold text-danger"><i class="fa fa-drumstick-bite text-danger"></i>Meat</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -350,7 +353,7 @@ foreach( $jData->pantries as $pantry ){
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold text-info"><i class="fa fa-asterisk text-info"></i>Frozen</p>
+                        <p class="explainer bold text-info"><i class="fa fa-snowflake text-info"></i>Frozen</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>
@@ -403,7 +406,7 @@ foreach( $jData->pantries as $pantry ){
             <article class="pantry sm-col-12 md-col-6 col-6 m-1 py-1">
                 <div class="pantry-head row">
                     <div class="head-section sm-col-6 md-col-6 col-6 text-left">
-                        <p class="explainer bold text-white"><i class="fa fa-asterisk text-white"></i>Dairy</p>
+                        <p class="explainer bold text-white"><i class="fa fa-cheese text-white"></i>Dairy</p>
                     </div>
                     <div class="head-section sm-col-6 md-col-6 col-6 px-1 text-left">
                         <p class="explainer bold"><i>Qty</i></p>

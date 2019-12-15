@@ -1,9 +1,16 @@
-<!-- Import header from /components -->
-<?php
-
-$pageTitle = 'Example page';
-
-require_once('components/header.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"/>
+    <link rel="stylesheet" href="src/style.css">
+    <title><?php echo $pageTitle ?></title>
+</head>
+<body>
 
 <div class="extra-height"></div>
 
@@ -91,13 +98,13 @@ require_once('components/header.php') ?>
 <h4 class="m-3">Round images</h4>
 
 <div class="m-3">
-    <img src="src/images/test-user.png" class="round-img">
+    <img src="four.jpeg" class="round-img">
 </div>
 
 <h4 class="m-3"> Square elegant images</h4>
 
 <div class="m-3">
-    <img src="src/images/test-user.png" class="square-img">
+    <img src="four.jpeg" class="square-img">
 </div>
 
 
@@ -105,7 +112,7 @@ require_once('components/header.php') ?>
 
 <div class="extra-height m-3 row">
     <div class="m-1 col-6 secondary sm-col-12 align-center">
-        <img src="src/images/test-user.png" class="square-img">    
+        <img src="four.jpeg" class="square-img">    
     </div>
     <div class="m-1 sm-col-12 col-6 secondary"></div>
 </div>
@@ -259,8 +266,21 @@ require_once('components/header.php') ?>
     </div>
 </div>
 
+    <div id="footerContainer" class="footer">
+        <div id="copyrightWrapper" class="row max-vw">
+            <p class="col-12 text-right mx-1 p-1">Limeless &copy; <?php echo date('Y'); ?> Copyright</p>
+        </div>
+    </div>
 
+</div> <!-- end of #pageContent -->
+</div> <!-- end of .background-image -->
 
+<!-- Scripts -->
 
-<!-- Import footer from /components -->
-<?php require_once('components/footer.php') ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="src/app.js"></script>
+
+<!-- End of scripts -->
+
+</body>
+</html>

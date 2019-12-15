@@ -26,9 +26,9 @@ if ( $_SESSION ){
         <article id="loginContainer">
             <div class="title-wrapper py-2 text-center">
                 <h2>Your virtual pantry</h2>
-                <p class="tagline my-1">The easy way to keep track</p>
+                <p class="tagline bold">The easiest way to keep track</p>
             </div>
-            <form action="POST" id="login" class="login-form px-1">
+            <form action="POST" id="login" class="login-form p-2">
                 <p class="text-center bold">Login</p>
 
                 <div class="col-12 my-1">
@@ -45,11 +45,19 @@ if ( $_SESSION ){
                     </label>
                 </div>
 
-                <p id="errorMessage" class="my-1 text-danger error-message"></p>
+                <div class="row">
 
-                <div class="text-right my-1">
-                    <button id="login" class="btn-primary btn-big">Login</button>
+                    <div class="col-8">
+                        <p id="errorMessage" class="text-white error-message"></p>
+                    </div>
+
+                    <div class="text-right col-4">
+                        <button id="login" class="btn-primary btn-big">Login</button>
+                    </div>
+
                 </div>
+
+
             </div>
             </form>
         </article>
