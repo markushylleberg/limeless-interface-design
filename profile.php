@@ -146,7 +146,7 @@ foreach( $jData->pantries as $pantry ){
                     <button id="cancelPantryBtn" class="btn-warning danger text-white unclickable-icon"><i class="fa fa-times"></i>New pantry</button>
                 </div>
 
-                <div id="newPantrySection" class="new-pantry-section my-1 col-12 hidden">
+                <div id="newPantrySection" class="new-pantry-section my-3 col-12 hidden">
                     <div class="col-10 md-col-10">
                             <p class="mx-1 enlarged">Create new pantry</p>
                             <p class="mx-1">Please make sure to type the correct email of the member you wish to add to this pantry</p>
@@ -199,7 +199,7 @@ foreach( $jData->pantries as $pantry ){
             ?>
                 </div>
              </div>
-             <div class="sm-col-4 md-col-9 col-9 py-1 text-left">
+             <div class="sm-col-4 md-col-9 col-9 text-left">
                  <p class="italic">Click the icon to change pantry</p>
                 </div>
             </div>
