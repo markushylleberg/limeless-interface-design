@@ -40,7 +40,8 @@ foreach( $jData->pantries as $pantry ){
 <!-- Left section w. profile details -->
 <div id="profile" class="left">
     <div class="head profile-section">
-        <div class="row tablet-width-25 about-right-border">
+        <div class="row tablet-width-25">
+        <!-- <div class="row tablet-width-25 about-right-border"> -->
             <div class="sm-col-4 md-col-12 col-12 text-center">
                 <div class="image-wrapper">
                     <!-- Avatar -->
@@ -58,7 +59,7 @@ foreach( $jData->pantries as $pantry ){
 
         <div class="body profile-section sm-col-8 md-col-12 col-12 p-1">
             <div class="explainer">
-                <p class="text-center"><i class="fa fa-circle text-info"></i>You have 3 new notifications</p>
+                <p class="text-center">You have <b class="text-info">3</b> new notifications</p>
             </div>
             <div id="notificationsPanel">
                 <div class="inner">

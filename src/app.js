@@ -319,6 +319,9 @@ class UI {
     static clearNotifications(){
         let noticationsPanel = all('.notification-item');
 
+        one('#showHideNotificationsButton').classList.add('hidden');
+        one('#clearAllNotificationsButton').classList.add('hidden');
+
         for ( let i = 0; i < noticationsPanel.length; i++ ){
             noticationsPanel[i].remove();
         }
