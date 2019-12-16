@@ -114,7 +114,7 @@ foreach( $jData->pantries as $pantry ){
             <div class="row">
                     <div class="selected-field-name">
                         <div>
-                            <p id="pantrySelected" class="bold pantry-selected px-1"><?php echo $firstPantryName ?></p>
+                            <p id="pantrySelected" class="bold pantry-selected"><?php echo $firstPantryName ?></p>
                         </div>
                     </div>
                     <div class="members-of-pantry row">
