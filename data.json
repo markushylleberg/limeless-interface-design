@@ -600,8 +600,7 @@
                 "5dde937677fc1",
                 "5dde939b289b5",
                 "5dde93ee0d541",
-                "5dde93c392e7b",
-                "5dded4269c202"
+                "5dde93c392e7b"
             ],
             "ingredients": {
                 "5dded01dc0618": {
@@ -653,6 +652,11 @@
                     "name": "Salmon",
                     "category": "Meat",
                     "quantity": "501 g"
+                },
+                "5ddd45ff1d4b9": {
+                    "name": "Frozen spinach",
+                    "category": "Frozen",
+                    "quantity": "1 kg"
                 }
             }
         },
@@ -661,8 +665,7 @@
             "name": "Lover <3",
             "members": [
                 "5dde937677fc1",
-                "5dde9450affab",
-                "5dded4269c202"
+                "5dde9450affab"
             ],
             "ingredients": {}
         },
@@ -673,8 +676,7 @@
                 "5dde94299b945",
                 "5dde947b7e228",
                 "5dde93ee0d541",
-                "5dde93aed1587",
-                "5dded4269c202"
+                "5dde93aed1587"
             ],
             "ingredients": {
                 "5ddd459a44186": {
@@ -734,8 +736,7 @@
             "name": "Boys office",
             "members": [
                 "5dde9450affab",
-                "5dde94097a4c2",
-                "5dded4269c202"
+                "5dde94097a4c2"
             ],
             "ingredients": {
                 "5ddd461197995": {
