@@ -1,3 +1,10 @@
+# Want to try it out?
+        1) Login as: 
+                User: annica@poulsen.dk
+                Pass: annica
+                
+        2) Or sign up!
+
 # Limeless-interface-design
 Final project for our interface design class
 
